@@ -1,0 +1,231 @@
+@charset "UTF-8";
+@import url(reset.css);
+/* CSS Document */
+
+/* CSS Document */
+/* Padrões de Fontes no projeto
+// Títulos: ;
+// Citações: 
+// Texto: 'Arial' ;
+// Ordinal / químico: 'Calibri' ;
+*/
+
+
+
+
+/*👉=================== ESTILOS MIOLO ================================👈*/
+/* TÍTULOS  */
+.p0tit1{}
+.p0tit1numpv{}
+.p0tit1pv{}
+
+.p0tit2{}
+.p0tit2numpv{}
+.p0tit2pv{}
+
+.p0tit3{}
+.p0tit4{}
+.p0tit5{}
+.p0tit6{}
+
+.p0tit3negativo{}
+.p0tit4negativo{}
+.p0tit5negativo{}
+.p0tit6negativo{}
+
+/* TÍTULOS DE ELEMENTOS */
+
+/* Tabelas e Quadros */
+.p1tabelatit{}
+.p1tabelatitcoluna{}
+.p1tabelatexto{}
+.p1tabelatextoitem{}
+.p1tabelatextoitemcont{}
+
+/* Gráficos */
+.P1GraficoTit{}
+
+/* maps */
+.P1MapaTit{}
+
+/* Título Box */
+.p1box1tit{}
+.p1box1tit{}
+.p1box2tit{}
+
+/* Título Seção */
+.p1sec1tit1{}
+.p1sec1tit2{}
+
+.p1sec2tit1{}
+.p1sec2tit2{}
+
+/*👉=================== TEXTOS PESO: principal =======================👈*/
+/* Texto Principal */
+.p2textosemrecuo{}
+.p2textosemrecuoitem{}
+.p2textosemrecuoitemcont{}
+.p2textonumsemrecuo{}
+.p2texto{}
+.p2textoitem{}
+.p2textoitemcont{}
+.p2textosubitem{}
+.p2textosubitemcont{}
+.p2textoletrap2textoletracont{}
+.p2textoletraitem{}
+.p2textoletraitemcont{}
+.p2textomarcador{}
+.p2textomarcadoritem{}
+.p2textomarcadorsemrecuo{}
+
+/* Questão Teoria */
+.p2questao{}
+.p2questaocont{}
+.p2questaoletra{}
+.p2questaoletracont{}
+.p2questaoletraitem{}
+.p2questaoletraitemcont{}
+.p2questaoitem{}
+.p2questaoitemcont{}
+.p2questaosubitem{}
+.p2questaosubitemcont{} 
+.p2questaomarcador{}
+.p2questaomarcadorcont{}
+
+/* Atividades */
+.p2atv{}
+.p2atvcont{}
+.p2atvromano{}
+.p2atvromanocont{}
+.p2atvitem{}
+.p2atvitemcont{}
+.p2atvsubitem{}
+.p2atvsubitemcont{}
+.p2atvitemletra{}
+.p2atvitemletracont{}
+.p2atvletra{}
+.p2atvletracont{}
+.p2atvletraromano{}
+.p2atvletraromanocont{}
+.p2atvletraitem{}
+.p2atvletraitemcont{}
+.p2atvletraitemromano{}
+.p2atvletraitemromanocont{}
+.p2atvmarcador{}
+.p2atvsomatoria{}
+.p2atvsomatoriacont{}
+
+
+
+/*👉==================== TEXTOS PESO: intermediário ===================👈*/
+/* Textos intermediários */
+.p3intermediariotit{}
+.p3intermediario{}
+.p3intermediarioitem{}
+.p3intermediarioitemcont{}
+.p3intermediarioitemletra{}
+.p3intermediarioitemletracont{}
+.p3intermediarioletra{}
+.p3intermediarioletracont{}
+.p3intermediarionumero{}
+.p3intermediarionumerocont{}
+.p3intermediariomarcador{}
+.p3intermediariomarcadorcont{}
+.p3intermediariosemrecuo{}
+.p3intermediariosemrecuoitem{}
+.p3intermediariosemrecuoitemcont{}
+.p3intermediariosemrecuoletra{}
+.p3intermediariosemrecuoletracont{}
+
+/* Textos citados */
+.p3citacaomanchete{}
+.p3citacaotit1{}
+.p3citacaotit2{}
+.p3citacaoolho{}
+.p3citacao{}
+.p3citacaoitem{}
+.p3citacaoitemcont{}
+.p3citacaoletra{}
+.P3CitacaoLetraCont{}
+
+
+/*👉==================== TEXTOS PESO: menor ===========================👈*/
+/* Legenda */
+.p4legenda{}
+
+/* Crédito geral */
+.p4credgeral{}
+
+/* Cotas */
+.p4cota{}
+
+/* Vocabulário */
+.p4vocabulario{}
+
+/* Glossário */
+.p4glossario{}
+
+/* Recado imagem e medida animal */
+.p4recadoimagem{}
+
+/* Cuidado dica */
+.p4cuidadodica{}
+.p4cuidadodicaitem{}
+.p4cuidadodicaitemcont{}
+
+/* Respostas */
+.p4resposta{}
+
+/*👉TEXTOS SUPORTE👈*/
+/* Balão de fala */
+.p5balao{}
+
+/* Marcadores */
+.p5marcador{}
+.p5marcadornegativo{}
+
+.p5marcador2{}
+.p5marcador2negativo{}
+
+.p5marcadorcaixa{}
+.p5marcadorcaixanegativo{}
+
+.p5marcadorcaixa2{}
+.P5MarcadorCaixa2Negativo{}
+
+/*👉ESTILOS DE CARACTER👈*/
+.c1bold{}
+.c1italico{}
+.c1bolditalico{}
+.c2respostabold{}
+.c2respostaitalico{}
+.c2respostabolditalico{}
+.c3idioma{}
+.c3idiomabold{}
+.c3idiomaitalico{}
+.c3idiomabolditalico{}
+.c3idiomaresposta{}
+.c3idiomaboldresposta{}
+.c3idiomaitalicoresposta{}
+.c3idiomabolditalicoresposta{}
+.c4ordinal{}
+.c4simuladorhiperlink{}
+.c4vocabulariodestaque{}
+.c4vocabulariodestaqueitalico{}
+.c4glossariodestaque{}
+.c4glossariodestaqueitalico{}
+
+
+
+/*MEDIA QUERY*/
+/*👉Versão Mobile Cel👈*/
+@media screen and (min-width: 300px) and (max-width: 700px) {}
+
+/*👉Versão Mobile tablet👈*/
+@media screen and (min-width: 720px) and (max-width: 1024px) {}
+
+/*👉Versão Desktop👈*/
+@media screen and (min-width: 1200px) {}
+
+/*👉Versão IMPRESSÃO👈*/
+@media print and (max-height: 280mm) {}

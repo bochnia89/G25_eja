@@ -1,0 +1,187 @@
+
+/*👉=========== TÍTULOS =========================👈*/
+.p0tit1mp{}
+.p0tit1mpnegativo{}
+
+.p0tit2mp{}
+.p0tit2mpnegativo{}
+
+.p0tit3mp{}
+.p0tit3mpnegativo{}
+
+.p0tit4mp{}
+.p0tit4mpnegativo{}
+
+.p0tit5mp{}
+.p0tit5mpnegativo{}
+
+.p0tit6mp{}
+.p0tit6mpnegativo{}
+
+/*👉=========== TÍTULOS ESPECÍFICOS =============👈*/
+/* Sumário */
+.p1sumariomppeso1{}
+.p1sumariomppeso2{}
+.p1sumariomppeso3{}
+.p1sumariomppeso4{}
+.p1sumariomppeso5{}
+.p1sumariompfinais{}
+
+/* Tabelas e Quadros */
+.p1tabelatit{} 
+.p1tabelatitcoluna{}
+.p1tabelatexto{}
+.p1tabelatextoitem{}
+.p1tabelatextoitemcont{}
+
+/* Gráficos */
+.p1graficotit{} 
+
+/* Mapas */
+.p1mapatit{}
+
+/* Títulos de box */
+.p1box1tit{}
+
+
+/* Seção 1 */
+.p1sec1mptit1{}
+.p1sec1mptit2{}
+
+/* Seção 2 */
+.p1sec2mptit1{}
+.p1sec2mptit2{}
+
+/*👉=========== TEXTOS PESO: PRINCIPAL===========👈*/
+/* Texto Principal */
+.p2textompsemrecuo{}
+.p2textompsemrecuoitem{}
+.p2textompsemrecuoitemcont{}
+.p2textompnumsemrecuo{}
+.p2textompnumsemrecuocont{}
+.p2textomp{}
+.p2textompitem{}
+.p2textompitemcont{}
+.p2textompsubitem{}
+.p2textompsubitemcont{}
+.p2textompletra{}
+.p2textompletracont{}
+.p2textompletraitem{}
+.p2textompletraitemcont{}
+.p2textompmarcador{}
+.p2textompmarcadoritem{}
+.p2textompmarcadorsemrecuo{}
+
+/* Resposta e comentários - Questão Teoria */
+.p2questaomp{}
+.p2questaompcont{}
+.p2questaompletra{}
+.p2questaompletracont{}
+.p2questaompletraitem{}
+.p2questaompletraitemcont{}
+.p2questaompitem{}
+.p2questaompitemcont{}
+.p2questaompsubitem{}
+.p2questaompsubitemcont{}
+.p2questaompnumitem{}
+.p2questaompnumletra{}
+.p2questaompnumletraitem{}
+
+/* Resposta e comentários - Atividades */
+.p2atvmp{}
+.p2atvmpcont{}
+.p2atvmpromano{}
+.p2atvmpromanocont{}
+.p2atvmpitem{}
+.p2atvmpitemcont{}
+.p2atvmpsubitem{}
+.p2atvmpsubitemcont{}
+.p2atvmpitemletra{}
+.p2atvmpitemletracont{}
+.p2atvmpletra{}
+.p2atvmpletracont{}
+.p2atvmpletraitembullet{}
+.p2atvmpletraitembulletcont{}
+.p2atvmpletraromano{}
+.p2atvmpletraromanocont{}
+.p2atvmpnumitem{}
+.p2atvmpnumletra{}
+.p2atvmpnumletraitem{}
+.p2atvmpletraitem{}
+.p2atvmpnumromano{}
+.p2atvmpsomatoria{}
+
+/*👉=========== TEXTOS PESO: INTERMEDIÁRIO ======👈*/
+/* Textos Intermediários */
+.p3intermediariomptit
+.p3intermediariomp
+.p3intermediariompitem
+.p3intermediariompitemcont
+.p3intermediariompitemletra
+.p3intermediariompitemletracont
+.p3intermediariompletra
+.p3intermediariompletracont
+.p3intermediariompnumero
+.p3intermediariompnumerocont
+.p3intermediariompmarcador
+.p3intermediariompmarcadorcont
+.p3intermediariompsemrecuo
+.p3intermediariompsemrecuoitem
+.p3intermediariompsemrecuoitemcont
+
+/* Citação */
+.p3citacaomptit1{}
+.p3citacaomptit2{}
+.p3citacaompolho{}
+.p3citacaomp{}
+.p3citacaompitem{}
+.p3citacaompitemcont{}
+.p3citacaompletra{}
+.p3citacaompletracont{}
+.p3citacaompnumero{}
+.p3citacaompnumerocont{}
+
+/*👉=========== TEXTOS PESO: MENOR ==============👈*/
+/* Legenda */
+.p4legenda{}
+
+/* Crédito Geral */
+.p4credgeral{}
+
+/* Cotas  */
+.p4cota{}
+
+/* Crédito imagem */
+.p4creditoimagem{}
+
+/* Recado imagem e medida animal */
+.p4recadoimagem{}
+
+/* Respostas de atividades propostas no Manual */
+.p4respostamp{}
+
+/*👉=========== ESTILOS DE CARACTER =============👈*/
+.c0destaqueletramp{}
+.c0destaquenumeromp{}
+.c0bulletnumitem{}
+.c1bold{}
+.c1italico{}
+.c1bolditalico{}
+.c3idioma{}
+.c3idiomabold{}
+.c3idiomaitalico{}
+.c3idiomabolditalico
+.c4ordinal{}
+
+/*MEDIA QUERY*/
+/*👉Versão Mobile Cel👈*/
+@media screen and (min-width: 300px) and (max-width: 700px) {}
+
+/*👉Versão Mobile tablet👈*/
+@media screen and (min-width: 720px) and (max-width: 1024px) {}
+
+/*👉Versão Desktop👈*/
+@media screen and (min-width: 1200px) {}
+
+/*👉Versão IMPRESSÃO👈*/
+@media print and (max-height: 280mm) {}
