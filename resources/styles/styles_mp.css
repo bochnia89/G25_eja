@@ -42,6 +42,7 @@
 
 /* Títulos de box */
 .p1box1tit{}
+.p1box2tit{}
 
 
 /* Seção 1 */
@@ -55,34 +56,48 @@
 /*👉=========== TEXTOS PESO: PRINCIPAL===========👈*/
 /* Texto Principal */
 .p2textompsemrecuo{}
+
 .p2textompsemrecuoitem{}
 .p2textompsemrecuoitemcont{}
+
 .p2textompnumsemrecuo{}
 .p2textompnumsemrecuocont{}
+
 .p2textomp{}
+
 .p2textompitem{}
 .p2textompitemcont{}
+
 .p2textompsubitem{}
 .p2textompsubitemcont{}
+
 .p2textompletra{}
 .p2textompletracont{}
+
 .p2textompletraitem{}
 .p2textompletraitemcont{}
+
 .p2textompmarcador{}
 .p2textompmarcadoritem{}
+
 .p2textompmarcadorsemrecuo{}
 
 /* Resposta e comentários - Questão Teoria */
 .p2questaomp{}
 .p2questaompcont{}
+
 .p2questaompletra{}
 .p2questaompletracont{}
+
 .p2questaompletraitem{}
 .p2questaompletraitemcont{}
+
 .p2questaompitem{}
 .p2questaompitemcont{}
+
 .p2questaompsubitem{}
 .p2questaompsubitemcont{}
+
 .p2questaompnumitem{}
 .p2questaompnumletra{}
 .p2questaompnumletraitem{}
@@ -90,41 +105,59 @@
 /* Resposta e comentários - Atividades */
 .p2atvmp{}
 .p2atvmpcont{}
+
 .p2atvmpromano{}
 .p2atvmpromanocont{}
+
 .p2atvmpitem{}
 .p2atvmpitemcont{}
+
 .p2atvmpsubitem{}
 .p2atvmpsubitemcont{}
+
 .p2atvmpitemletra{}
 .p2atvmpitemletracont{}
+
 .p2atvmpletra{}
 .p2atvmpletracont{}
+
 .p2atvmpletraitembullet{}
 .p2atvmpletraitembulletcont{}
+
 .p2atvmpletraromano{}
 .p2atvmpletraromanocont{}
+
 .p2atvmpnumitem{}
+
 .p2atvmpnumletra{}
 .p2atvmpnumletraitem{}
+
 .p2atvmpletraitem{}
+
 .p2atvmpnumromano{}
+
 .p2atvmpsomatoria{}
 
 /*👉=========== TEXTOS PESO: INTERMEDIÁRIO ======👈*/
 /* Textos Intermediários */
 .p3intermediariomptit
+
 .p3intermediariomp
+
 .p3intermediariompitem
 .p3intermediariompitemcont
 .p3intermediariompitemletra
 .p3intermediariompitemletracont
+
 .p3intermediariompletra
 .p3intermediariompletracont
+
 .p3intermediariompnumero
 .p3intermediariompnumerocont
+
 .p3intermediariompmarcador
 .p3intermediariompmarcadorcont
+
 .p3intermediariompsemrecuo
 .p3intermediariompsemrecuoitem
 .p3intermediariompsemrecuoitemcont
@@ -132,12 +165,16 @@
 /* Citação */
 .p3citacaomptit1{}
 .p3citacaomptit2{}
+
 .p3citacaompolho{}
+
 .p3citacaomp{}
+
 .p3citacaompitem{}
 .p3citacaompitemcont{}
 .p3citacaompletra{}
 .p3citacaompletracont{}
+
 .p3citacaompnumero{}
 .p3citacaompnumerocont{}
 
@@ -162,15 +199,20 @@
 
 /*👉=========== ESTILOS DE CARACTER =============👈*/
 .c0destaqueletramp{}
+
 .c0destaquenumeromp{}
+
 .c0bulletnumitem{}
+
 .c1bold{}
 .c1italico{}
 .c1bolditalico{}
+
 .c3idioma{}
 .c3idiomabold{}
 .c3idiomaitalico{}
 .c3idiomabolditalico
+
 .c4ordinal{}
 
 /*MEDIA QUERY*/

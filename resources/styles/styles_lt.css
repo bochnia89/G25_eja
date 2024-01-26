@@ -1,29 +1,360 @@
 @charset "UTF-8";
 @import url(reset.css);
+@import url(colorfonts.css);
 /* CSS Document */
 
-/* CSS Document */
-/* Padrões de Fontes no projeto
-// Títulos: ;
-// Citações: 
-// Texto: 'Arial' ;
-// Ordinal / químico: 'Calibri' ;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-size: var(--pesoPadrao);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    overflow-x: hidden;
+    hyphens: none;   
+}
+main {
+    max-width: 85ch;
+    margin: 0 auto;
+}
+section {
+    box-sizing: border-box;
+    margin-bottom: 2.5em;
+    page-break-before: always;
+    page-break-after: avoid;
+}
+section header {
+    padding: 15px 0 0px 0;
+    display: flex;
+    flex-direction: column;
+}
+blockquote {
+    font-size: 1em;
+    max-width: 100%;
+}
+figure {
+    margin: 1em 0.5em;
+    display: table;
+}
+figure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+figcaption.p4legenda {
+    display: table-caption;
+    caption-side: bottom;
+    hyphens: none;
+}
+figcaption.legenda2 {
+    display: table-caption;
+    caption-side: top;
+    hyphens: none;
+}
+
+p, ul li {
+    hyphens: none;
+    max-width: 100%;
+}
+
+p {
+    hyphens: none !important;
+    line-height: 170%;    
+    max-width: 100%;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+strong em, em strong  {
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/*👉 ----- IDs PARA MAPEAMENTO ------ 👈
+//mathml_id_2028548792szo
+//aj_pro_id_t092036697776uk
+//lang_id_ed2047233561g
+//glossario_id_mOm092057201488_glos
+//glossario_id_mOm092057201488_voc
+//list_id_gv2456551860w
 */
 
+/*👉 CLASSES RESERVADAS DIGITAL 👈*/
+.aluno{}
+.professor{}
+.url_para_encurta{}
+.pag{}
+.box_aluno{}
+.box_professor_mp{
+    background: var(--laranja3);
+    padding: 0 1em 1em 1em ;
+}
+.caracterizada{}
+.descaracterizada{}
+.ajustepronuncia{}
+.conteudoOriginal{}
+.conteudoAdaptado{}
+.creditoimagemOED{}
+.creditoimagem{}
+.creditoimagemResposta{}
+.creditoimagemPage{}
 
+.orienta{ 
+    background: var(--roxo2);
+    border-radius: 0  0 1em 1em ;
+    color:var(--preto);
+    font-family: var(--titulo);
+    text-align: center;
+    padding: 0.5em 1em ;
+    margin: 0 0 1em 0;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+.orientaTx{}
+
+
+/*👉CLASSES PARA DIAGRAMAR👈*/
+/* COLUNAS E ALINHAMENTO */
+.col2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.col2c {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 16px;
+}
+
+.col2s {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 16px;
+}
+
+.col2d{}
+
+/* Alinhamento vertical */
+.colTop {
+    align-items: flex-start;
+}
+
+.colCenter {
+    align-items: center;
+}
+
+.colBottom {
+    align-items: flex-end;
+}
+
+/* Alinhamento vertical de imagens dentro do parágrafo */
+.imgBottom {
+    vertical-align: text-bottom;
+}
+
+.imgTop {
+    vertical-align: sub;
+}
+
+.ico,
+.imgMiddle {
+    vertical-align: middle;
+}
+
+/* ALINHAMENTO DE TEXTO  */
+.esquerda tr td,
+.esquerda tr th,
+.esquerda {
+    text-align: left !important;
+}
+
+.direita tr td,
+.direita tr th,
+.direita {
+    text-align: right;
+}
+
+.centro tr td,
+.centro tr th,
+.centro {
+    text-align: center;
+}
+
+.justificado tr td,
+.justificado tr th,
+.justificado {
+    text-align: justify;
+}
+
+.largura25 {
+    width: 25% !important;
+}
+
+.largura33 {
+    width: 33% !important;
+}
+
+.largura45 {
+    width: 45% !important;
+}
+
+
+/*👉ESTILOS CONSUMIVEL👈*/
+.linhaResposta1, .linhaResposta2,
+.linhaResposta3, .linhaResposta4,
+.linhaResposta5{
+    background: url(../images/linha_resposta.svg) ;
+    width: 100%;
+    margin: 1em 0;
+}
+.linhaResposta1{
+    height:20px;
+}
+.linhaResposta2{ 
+    height: 30px;
+}
+.linhaResposta3{ 
+    height: 50px;   
+}
+.linhaResposta4{   
+    height: 60px;   
+}
+.linhaResposta5{    
+    height: 80px;
+   
+}
+
+.lacunaRespostaP, .lacunaRespostaM,
+.lacunaRespostaG{
+    background: url(../images/linha_resposta.svg) ;
+    background-position-y:20px ;
+    margin: 0 5px;
+}
+.lacunaRespostaP{
+    padding:0em 1em;
+}
+.lacunaRespostaM{
+    padding:0em 2.5em;
+}
+.lacunaRespostaG{  
+    padding:0em 4.5em;
+}
 
 
 /*👉=================== ESTILOS MIOLO ================================👈*/
 /* TÍTULOS  */
-.p0tit1{}
-.p0tit1numpv{}
-.p0tit1pv{}
+.tit1{
+    align-items: center;
+    background:url(../images/pv_capitulo.svg) top left no-repeat var(--vermelho1);
+    background-size:100%;
+    border-radius: 0 0 3em 3em;
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;  
+    gap: 0.5em;  
+    height: 140px;
+    justify-content: center;
+    padding: 0 1em;
+    width: max-content;
 
-.p0tit2{}
+}
+.tit1::before{
+    content: '' ;
+    background: url(../images/pv_capitulo_bg.svg) top left no-repeat;
+    background-size: 100%;    
+    height: 233px;
+    margin: 5.7em 0 0 -150px;
+    position: absolute;
+    width: 150px;
+    z-index: -10;
+   
+}
+
+.p0tit1, .p0tit1numpv, .p0tit1pv{
+    font-family: var(--titulo);
+}
+
+.p0tit1{
+    background:var(--laranja2);
+    font-size: var(--peso1);
+    font-weight: bold;
+    line-height: 1.13em;
+    padding: 0.5em;
+    margin: 1.6em 0 0 0;
+    width: max-content;
+    max-width: 75%;
+    height: max-content;
+}
+
+.p0tit1numpv{
+    font-size: 3.1em;
+    font-weight: bold;
+   
+    
+}
+.p0tit1pv{
+    font-weight: bold;
+}
+
+
+.p0tit2{
+    background: var(--laranja2);
+    font-family: var(--titulo);
+    font-weight: bold;
+    font-size: var(--peso2);
+    line-height: 1.2em;
+    margin: 1em 0 0.5em;
+    padding: 0.2em 1em 0.3em 2em;
+    width: max-content;
+    max-width: 100%;
+}
+.p0tit2::before{
+    content: '';
+    background: url(../images/pv_p0tit2.svg) top left no-repeat;
+    background-size: 100%;
+    width: 50px;
+    height: 80px;
+    position: absolute;
+    margin: -30px 0 0 -55px;
+}
 .p0tit2numpv{}
 .p0tit2pv{}
 
-.p0tit3{}
+.p0tit3{
+    font-family: var(--titulo);
+    font-weight: bold;
+    font-size: var(--peso3);
+    line-height: 1.2em;
+    margin: 1em 0 0.5em 0;
+    padding: 0.2em 1em 0.3em 0.8em;
+    width: max-content;
+    max-width: 100%;
+}
+.p0tit3::before{
+    content: '';
+    background: url(../images/pv_p0tit3.svg) top left no-repeat;
+    background-size: 100%;
+    width: 18px;
+    height: 30px;
+    position: absolute;
+    margin: 4px 0 0 -24px;
+}
+
 .p0tit4{}
 .p0tit5{}
 .p0tit6{}
@@ -32,6 +363,44 @@
 .p0tit4negativo{}
 .p0tit5negativo{}
 .p0tit6negativo{}
+
+/* FIXME: classes provisórias */
+.sectitAtv{
+    margin: 2em 0 0.5em 0;
+}
+.sectitAtv::before{
+    content: '';
+    background:url(../images/pv_titatividadesbg.svg) top left no-repeat;
+    width: 95px;
+    height: 40px;
+    position: absolute;
+    margin: -25px 0 0 70px;
+    z-index: -3;
+}
+.sectitAtv>.atv{
+    background: url(../images/pv_titatividades_bg.svg) no-repeat var(--verde1);
+    background-position-y: -23px ;
+    background-position-x: -20px ;
+    background-size:45px;
+    border-radius: 1em 1em 0 0;
+    font-family: var(--titulo);
+    font-weight: bold;
+    font-size: var(--pesoPadrao);
+    color: var(--branco);
+    padding: 0.4em 1em 0.3em 1.9em ;
+    width: max-content;
+    max-width: 100%;
+}
+.sectitAtv>.anote{
+    background: var(--roxo2);
+    border-radius:0em 1.2em 0 0;
+    font-family: var(--texto);
+    font-weight: normal;
+    font-size: var(--pesoMenor);
+    padding: 0.2em 1em 0.4em 1em ;
+    width: max-content;
+    max-width: 100%;
+}
 
 /* TÍTULOS DE ELEMENTOS */
 
@@ -42,6 +411,7 @@
 .p1tabelatextoitem{}
 .p1tabelatextoitemcont{}
 
+
 /* Gráficos */
 .P1GraficoTit{}
 
@@ -49,46 +419,92 @@
 .P1MapaTit{}
 
 /* Título Box */
-.p1box1tit{}
-.p1box1tit{}
-.p1box2tit{}
+.p1box1tit{
+    font-family: var(--titulo);
+    font-weight: bold;
+    color: var(--branco);
+}
+.p1box2tit{
+    font-family: var(--titulo);
+    font-weight: bold;
+    color: var(--preto);
+}
 
 /* Título Seção */
 .p1sec1tit1{}
 .p1sec1tit2{}
+.p1sec1tit3{}
 
 .p1sec2tit1{}
 .p1sec2tit2{}
+.p1sec2tit3{}
 
-/*👉=================== TEXTOS PESO: principal =======================👈*/
+.p1sec3tit1{}
+.p1sec3tit2{}
+.p1sec3tit3{}
+
+.p1sec4tit1{}
+.p1sec4tit2{}
+.p1sec4tit3{}
+
+.p1sec5tit1{}
+.p1sec5tit2{}
+.p1sec5tit3{}
+
+.p1sec6tit1{}
+.p1sec6tit2{}
+.p1sec6tit3{}
+
+/*👉======= TEXTOS PESO: principal =======👈*/
 /* Texto Principal */
 .p2textosemrecuo{}
 .p2textosemrecuoitem{}
 .p2textosemrecuoitemcont{}
 .p2textonumsemrecuo{}
+.p2textomarcadorsemrecuo{
+    margin: 0.5em 0 0.5em 30px;
+}
+
 .p2texto{}
+
 .p2textoitem{}
 .p2textoitemcont{}
+
 .p2textosubitem{}
 .p2textosubitemcont{}
-.p2textoletrap2textoletracont{}
+
+.p2textoitemletra{}
+.p2textoitemletracont{}
+
+.p2textoletra{}
+.p2textoletracont{}
 .p2textoletraitem{}
 .p2textoletraitemcont{}
+
 .p2textomarcador{}
+
 .p2textomarcadoritem{}
-.p2textomarcadorsemrecuo{}
+.p2textomarcadoritemcont{}
+
+.p2textomarcadorsubitem{} /*TODO: Aguardando de definição de uso*/
+
 
 /* Questão Teoria */
 .p2questao{}
 .p2questaocont{}
+
 .p2questaoletra{}
 .p2questaoletracont{}
+
 .p2questaoletraitem{}
 .p2questaoletraitemcont{}
+
 .p2questaoitem{}
 .p2questaoitemcont{}
+
 .p2questaosubitem{}
 .p2questaosubitemcont{} 
+
 .p2questaomarcador{}
 .p2questaomarcadorcont{}
 
@@ -97,20 +513,31 @@
 .p2atvcont{}
 .p2atvromano{}
 .p2atvromanocont{}
+
 .p2atvitem{}
 .p2atvitemcont{}
+
 .p2atvsubitem{}
 .p2atvsubitemcont{}
+
 .p2atvitemletra{}
 .p2atvitemletracont{}
+
 .p2atvletra{}
 .p2atvletracont{}
+
 .p2atvletraromano{}
 .p2atvletraromanocont{}
+
 .p2atvletraitem{}
 .p2atvletraitemcont{}
+
+.p2atvletrasubitem{}
+.p2atvletrasubitemcont{}
+
 .p2atvletraitemromano{}
 .p2atvletraitemromanocont{}
+
 .p2atvmarcador{}
 .p2atvsomatoria{}
 .p2atvsomatoriacont{}
@@ -121,33 +548,46 @@
 /* Textos intermediários */
 .p3intermediariotit{}
 .p3intermediario{}
+
 .p3intermediarioitem{}
 .p3intermediarioitemcont{}
 .p3intermediarioitemletra{}
 .p3intermediarioitemletracont{}
+
 .p3intermediarioletra{}
 .p3intermediarioletracont{}
+
 .p3intermediarionumero{}
 .p3intermediarionumerocont{}
+
 .p3intermediariomarcador{}
 .p3intermediariomarcadorcont{}
+
 .p3intermediariosemrecuo{}
 .p3intermediariosemrecuoitem{}
 .p3intermediariosemrecuoitemcont{}
+
 .p3intermediariosemrecuoletra{}
 .p3intermediariosemrecuoletracont{}
 
 /* Textos citados */
 .p3citacaomanchete{}
+
 .p3citacaotit1{}
 .p3citacaotit2{}
+
 .p3citacaoolho{}
+
 .p3citacao{}
+
 .p3citacaoitem{}
 .p3citacaoitemcont{}
+
 .p3citacaoletra{}
 .P3CitacaoLetraCont{}
 
+.p3citacaonumero{}
+.p3citacaonumerocont{}
 
 /*👉==================== TEXTOS PESO: menor ===========================👈*/
 /* Legenda */
@@ -158,6 +598,7 @@
 
 /* Cotas */
 .p4cota{}
+.p4cotamarcador{}
 
 /* Vocabulário */
 .p4vocabulario{}
@@ -168,10 +609,14 @@
 /* Recado imagem e medida animal */
 .p4recadoimagem{}
 
+/* Crédito Imagem*/
+
+.p4creditoimagem{}
+
 /* Cuidado dica */
 .p4cuidadodica{}
 .p4cuidadodicaitem{}
-.p4cuidadodicaitemcont{}
+.p4cuidadodicaitemcont{} 
 
 /* Respostas */
 .p4resposta{}
@@ -181,7 +626,17 @@
 .p5balao{}
 
 /* Marcadores */
-.p5marcador{}
+.p5marcador{
+    background: var(--verde1);
+    color: var(--branco);
+    font-weight: bold;   
+    height: 25px;
+    position: absolute;
+    text-align: center;
+    margin: 0 0 0 -30px;
+    width: 25px;
+
+}
 .p5marcadornegativo{}
 
 .p5marcador2{}
@@ -193,13 +648,39 @@
 .p5marcadorcaixa2{}
 .P5MarcadorCaixa2Negativo{}
 
+/* ABERTURA DE CAPITULO */
+/* FIXME: classe temporária */
+.o0boxaberturaAtvTit{
+    background: var(--preto);
+    border-radius:3em;
+    color: var(--branco);
+    font-family: var(--titulo);
+    font-weight: bold;
+    padding: 0.2em 1em 0.3em 1em;
+    margin: -3em 0 1em 0;
+    width: max-content;
+    max-width: 100%;
+}
+
+.p5aberturaobjtit{
+    font-family: var(--texto);
+    font-weight: bold;
+    font-size: var(--pesoPadrao);
+}
+.p5aberturaobjitem{
+    list-style: disc;
+    margin: 0.5em 0 0.5em 1em;
+}
+
 /*👉ESTILOS DE CARACTER👈*/
 .c1bold{}
 .c1italico{}
 .c1bolditalico{}
+
 .c2respostabold{}
 .c2respostaitalico{}
 .c2respostabolditalico{}
+
 .c3idioma{}
 .c3idiomabold{}
 .c3idiomaitalico{}
@@ -208,18 +689,252 @@
 .c3idiomaboldresposta{}
 .c3idiomaitalicoresposta{}
 .c3idiomabolditalicoresposta{}
+
 .c4ordinal{}
+
 .c4simuladorhiperlink{}
+
 .c4vocabulariodestaque{}
 .c4vocabulariodestaqueitalico{}
+
 .c4glossariodestaque{}
 .c4glossariodestaqueitalico{}
 
+.c0destaqueletra{}
+.c0destaquenumero{}
 
+/* ESTILO DE OBJETO */
+.boxaberturaTit{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin: 0 0 0 100px;
+    max-width: 90% ;
+    position: absolute;
+    z-index: 3;
+}
+
+/*👉 ESTILOS DE OBJETOS
+.o0boxaberturaAtv
+.o0boxaberturaObj
+.o0boxinfo
+.o0boxdica
+.o0boxdestaque
+.o0boxcuidado
+.o0boxexemplo
+.o0boxpasso
+.o0boxserconsciente
+.o0boxrecadoimagem
+.o0boxmedidaanimal
+.o0boxpalavra
+.o0boxpalavranegativa
+.o0boxjornal
+.o0boxficha
+.o0boxcitacao
+.o0sec1
+.o0sec2
+.o0sec3
+.o0sec4
+.o0sec5
+.o0boxsec1
+.o0boxsec2
+.o1boxfundoverde
+.o1boxfundoazul1
+.o1boxfundoazul2
+.o2boxmapagrafico
+.o2boxesquema
+.o3boxfiolaranja1
+.o3boxfiovermelho1
+.o3boxfioroxo1
+.o3boxfioverde1
+.o3boxfiolaranja2
+.o3boxfiovermelho2
+.o3boxfioroxo2
+.o3boxfioverde2
+👈*/
+
+.boxTeste1{
+    position: relative;
+}
+.o0boxaberturaAtv, .o0boxaberturaObj{
+    padding: 2em 1em 1em 2em ;
+}
+.imgAbertura {
+    position: relative;
+}
+.o0boxaberturaAtv {
+    background-color: var(--laranja3);
+    border-radius: 3.5em 0 0 0;
+    padding-bottom: 5em;
+    position:relative;
+    z-index: 3;
+    margin: -6em 0 0 0; 
+}
+.o0boxaberturaAtv::before{
+    content: '';
+    background: url(../images/pv_boxaberturaatv_bg.svg) top left no-repeat;
+    background-size: 100%;
+    width: 113px;
+    height: 55px;
+    position: absolute;
+    margin: -5em 0 0 -15px;
+    z-index: -12;
+}
+.o0boxaberturaObj {
+    background: url(../images/pv_o0boxaberturaObj_bg.svg)  no-repeat var(--vermelho2);
+    background-position-x:110% ;
+    background-position-y:-80% ;
+    border-radius: 3.5em 0 0 0;
+    position:relative;
+    z-index: 4;
+    margin: -4em 0 0 0;
+   
+}
+
+.o3boxfiolaranja1, .o3boxfiovermelho1,
+.o3boxfioroxo1,
+.o3boxfioverde1,
+.o3boxfiolaranja2,
+.o3boxfiovermelho2,
+.o3boxfioroxo2,
+.o3boxfioverde2{
+    margin: 1em 0;
+}
+
+
+.o3boxfiolaranja1>.p1box1tit,
+.o3boxfiovermelho1>.p1box1tit,
+.o3boxfioroxo1>.p1box1tit,
+.o3boxfioverde1>.p1box1tit,
+.o3boxfiolaranja2>.p1box1tit,
+.o3boxfiovermelho2>.p1box1tit,
+.o3boxfioroxo2>.p1box1tit,
+.o3boxfioverde2>.p1box1tit,
+.o3boxfiolaranja1>.p1box2tit,
+.o3boxfiovermelho1>.p1box2tit,
+.o3boxfioroxo1>.p1box2tit,
+.o3boxfioverde1>.p1box2tit,
+.o3boxfiolaranja2>.p1box2tit,
+.o3boxfiovermelho2>.p1box2tit,
+.o3boxfioroxo2>.p1box2tit,
+.o3boxfioverde2>.p1box2tit
+{
+    border-radius: 1em 1em 0 0 ;
+    padding: 0.2em 1em;
+    width: max-content;
+    max-width: 100%;
+}
+
+.o3boxfiolaranja1>.p1box1tit,
+.o3boxfiolaranja1>.p1box2tit{
+    background: var(--laranja1);   
+}
+
+.o3boxfiovermelho1>.p1box1tit,
+.o3boxfiovermelho1>.p1box2tit{
+    background: var(--vermelho1);   
+}
+.o3boxfioroxo1>.p1box1tit,
+.o3boxfioroxo1>.p1box2tit{
+    background: var(--roxo1);   
+}
+.o3boxfioverde1>.p1box1tit,
+.o3boxfioverde1>.p1box2tit{
+    background: var(--verde1);   
+}
+.o3boxfiolaranja2>.p1box1tit, 
+.o3boxfiolaranja2>.p1box2tit{
+    background: var(--laranja2);   
+}
+.o3boxfiovermelho2>.p1box1tit,
+.o3boxfiovermelho2>.p1box2tit{
+    background: var(--vermelho2);   
+}
+.o3boxfioroxo2>.p1box1tit,
+.o3boxfioroxo2>.p1box2tit{
+    background: var(--roxo2);   
+}
+.o3boxfioverde2>.p1box1tit,
+.o3boxfioverde2>.p1box2tit{
+    background: var(--verde2);   
+}
+
+.o3boxfiolaranja1 .box,
+.o3boxfiovermelho1 .box,
+.o3boxfioroxo1 .box,
+.o3boxfioverde1 .box,
+.o3boxfiolaranja2 .box,
+.o3boxfiovermelho2 .box,
+.o3boxfioroxo2 .box,
+.o3boxfioverde2 .box {
+    border-radius: 0em 1em 1em 1em;
+    background: var(--branco);
+    padding: 1.2em;
+}
+
+
+.o3boxfiolaranja1 .box {
+    border: 1px solid var(--laranja1);
+   
+}
+
+.o3boxfiovermelho1 .box {
+    border: 1px solid var(--vermelho1);
+   
+}
+.o3boxfioroxo1 .box {
+    border: 1px solid var(--roxo1);
+   
+}
+.o3boxfioverde1 .box {
+    border: 1px solid var(--verde1);
+   
+}
+.o3boxfiolaranja2 .box {
+    border: 1px solid var(--laranja2);
+   
+}
+.o3boxfiovermelho2 .box {
+    border: 1px solid var(--vermelho2);
+   
+}
+.o3boxfioroxo2 .box {
+    border: 1px solid var(--roxo2);
+   
+}
+.o3boxfioverde2 .box {
+    border: 1px solid var(--verde2);
+   
+}
 
 /*MEDIA QUERY*/
 /*👉Versão Mobile Cel👈*/
-@media screen and (min-width: 300px) and (max-width: 700px) {}
+@media screen and (max-width: 700px) {
+    main{
+        max-width: 100%;
+    }
+
+    
+/*👉=================== ESTILOS MIOLO ================================👈*/
+/* TÍTULOS MOBILE  */
+.boxaberturaTit{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin: 0 0 0 0px;
+    max-width: 90% ;
+    position: static;
+   
+}
+
+.p0tit1{
+    margin: 0 0 1em 0;
+}
+
+
+
+
+}
 
 /*👉Versão Mobile tablet👈*/
 @media screen and (min-width: 720px) and (max-width: 1024px) {}
