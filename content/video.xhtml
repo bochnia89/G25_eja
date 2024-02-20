@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html>
 <html lang="pt-BR" xml:lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml">
+  
   <head>
     <meta charset="UTF-8" />
     <title>key_metadata_dc:title</title>
@@ -15,10 +16,9 @@
     <meta content="pt-br" name="language" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <!-- Scripts JS -->
+    <script src="../resources/scripts/hin/hotspots_index.js"></script>
     <!-- Link CSS -->
-    <link
-      href="../resources/styles/styles.css" rel="stylesheet" type="text/css"/>
-    <link href="../resources/styles/zoom.css" rel="stylesheet" type="text/css"/>
+    <link href="../resources/styles/hotspots_style.css" rel="stylesheet" type="text/css"/>
     <link href="../resources/styles/styles_oed.css" rel="stylesheet" type="text/css"/>
   </head>
 
@@ -63,62 +63,50 @@
         <div class="topo_oed">
           <h2 class="ti1_oed cor">Objeto digital</h2>
           <p class="instrucao_oed cor">
-            Para usar o objeto digital, mova o cursor sobre a imagem para ampliá-la. Após a
-            imagem será apresentada uma descrição complementar para
-            acessibilidade.
+            Clique no <em lang="en">play</em> e acompanhe as informações do vídeo. Após o vídeo será apresentada a sua transcrição para acessibilidade.
           </p>
         </div>
         <div class="conteudo_oed">
-          <h3 class="ti2_oed">Título da imagem do OED</h3>
+          <!--Título do infográfico-->
+          <h3 class="ti2_oed">Título do vídeo</h3>
+          <!--Texto introdutório-->
           <p class="tx_introducao_oed">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius velit
-            tempore quis alias ratione quod perferendis aspernatur omnis
-            temporibus molestiae, autem quia adipisci id, tenetur, rem est
-            doloremque consequatur recusandae?
+            Texto introdutório do vídeo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, ex
+            officiis doloribus iure harum labore rerum culpa at ea illum in
+            debitis recusandae, deserunt quam id magni cum praesentium saepe?
           </p>
-
-          <div class="img-zoom-container">
-            <div>
-              <figure>
-                <div class="col2c">
-                  <img
-                    id="myimage"
-                    src="../resources/images/oed/zoom1/obra4.jpg"
-                    width="500"
-                    height=""
-                    alt="Girl"
-                  />
-                  <div id="myresult" class="img-zoom-result"></div>
-                </div>
-                <figcaption class="legenda_oed">
-                  Aqui será a legenda da imagem amet consectetur, adipisicing
-                  elit. Necessitatibus accusamus veniam eveniet rerum non
-                  inventore harum earum asperiores quos corrupti, commodi
-                  itaque.
-                </figcaption>
-              </figure>
-            </div>
+          <!--video-->
+          <div class="col2c oedVideo">
+            <video aria-label="Courtney, nativa da Inglaterra, Tino, nativo do Zimbábue, e Jake, nativo dos Estados Unidos, falam sobre sua vinda ao Brasil, por quê acham que falar inglês se tornou tão importante e também dão suas opiniões sobre o uso de termos em inglês em nosso dia a dia de língua portuguesa." controls="controls" poster="../resources/images/oed/video/poster.png" width="700">
+              <source src="../resources/videos/enriquecimentos/v2153_6qti_g24_e002.mp4" type="video/mp4"/>
+              <object aria-label="Courtney, nativa da Inglaterra, Tino, nativo do Zimbábue, e Jake, nativo dos Estados Unidos, falam sobre sua vinda ao Brasil, por quê acham que falar inglês se tornou tão importante e também dão suas opiniões sobre o uso de termos em inglês em nosso dia a dia de língua portuguesa." type="application/video">
+              <embed allowfullscreen="false" allowscriptaccess="always" src="../resources/videos/enriquecimentos/v2153_6qti_g24_e002.mp4" type="application/x-shockwave-flash"/>
+              </object>
+                                  Formato não suportado
+            </video>
           </div>
+          <!--fim video-->
 
+          <!-- Transcrição -->
           <details class="descricao_longaOED">
-            <summary class="cor">
-              Descrição complementar do objeto digital para acessibilidade
-            </summary>
+            <summary class="cor">Transcrição do vídeo para acessibilidade</summary>
             <div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-                numquam beatae voluptas quibusdam omnis, culpa ducimus,
-                aspernatur quia eligendi earum obcaecati consequuntur sint unde?
-                Laboriosam necessitatibus et doloribus similique fugit.
-              </p>
+              <p class="rubrica_transcricao">[AUDIODESCRIÇÃO]</p>
+              <p  class="tx_transcricao"><em>Num fundo com formas coloridas, “<span id="lang_id_fr3112944305e" lang="en">Interview about the English Language</span>”. Área: Linguagens. Componente: Inglês. No canto inferior direito, intérprete de Libras. Em fundo lilás, “Quem é você? Descreva-se pra gente!”. Courtney, professora.</em></p>
+              
+              <p class="rubrica_transcricao">[COURTNEY]</p>
+              <p class="tx_transcricao">Meu nome é Lee Courtney Marvin, eu sou inglesa e eu tenho 46 anos. Eu tenho olhos verdes, tenho a pele clara e cabelos loiros e compridos. Eu estou sentada numa cadeira confortável e atrás de mim tem um fundo digital. Eu estou vestindo um tênis, uma saia de bolinha e uma jaqueta preta.</p>
+         
+              <p class="tx_transcricao">[...]</p>
+              
             </div>
-          </details>
-          <div class="credito">
-            <p class="creditoimagemOED">Crédito de imagem: da imagem</p>
-          </div>
-
-          <p class="tx_oed">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+        </details>
+          <!-- Fim da transcrição-->
+       
+          <!--Texto de Conclusão-->
+          <p class="tx_oed" id="textoconclusao">
+            Texto de conclusão lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
             voluptate, veritatis ducimus nisi amet consequatur magni ipsum
             beatae obcaecati temporibus iusto deserunt non quisquam rerum.
             Quisquam possimus atque sunt excepturi! Lorem ipsum dolor sit amet
@@ -129,19 +117,13 @@
           </p>
         </div>
 
+        <script src="../resources/scripts/jquery-3.5.1.min.js"></script>
+        <script src="../resources/scripts/hin/hotspots_index.js"></script>
+
         <nav class="btn_voltar_oed">
           <a href="#">Voltar ao conteúdo</a>
         </nav>
       </section>
     </main>
-    <!-- SCRIPTS -->
-    <script
-      type="text/javascript"
-      src="../resources/scripts/hzo/zoom.js"
-    ></script>
-    <script>
-      // Initiate zoom effect:
-      imageZoom("myimage", "myresult");
-    </script>
   </body>
 </html>
