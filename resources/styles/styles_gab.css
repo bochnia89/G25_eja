@@ -1,0 +1,116 @@
+@charset "UTF-8";
+@import url(reset.css);
+/* CSS Document */
+/* Documento de CSS do Gabarito */
+
+/*👉------- TÍTULO -------👈*/
+.p0tit1gab{
+    background: var(--verde1);
+    color: var(--branco);
+    font-family: var(--titulo);
+    font-size: var(--peso4);
+    padding:0 0.6em 0.4em 0.6em;
+    width: max-content;
+    max-width: 100%;
+    margin-bottom: 1em;
+}
+.p0tit1gab::before{
+    background: url(../images/pv_p0tit1gab.svg) no-repeat;
+    background-size: 100%;
+    content: '';    
+    width: 131px;
+    height: 61px;
+    position: absolute;
+    margin:-35px 0 0 -40px ;
+    z-index: -10;
+}
+.p0tit1gabnegativo{}
+
+.p0tit2gab{}
+.p0tit2gabnegativo{}
+
+.p0tit3gab{}
+.p0tit3gabnegativo{}
+
+/*👉------- TABELA -------👈*/
+
+/*👉------- QUADRO -------👈*/ 
+
+/*👉------- GRÁFICO -------👈*/ 
+
+/*👉------- MAPAS -------👈*/ 
+
+/*👉------- SEÇÃO -------👈*/ 
+
+/*👉------- TEXTO PRINCIPAL  -------👈*/
+.p2textogabsemrecuo{}
+.p2textogabsemrecuoitem{}
+.p2textogabsemrecuoitemcont{}
+.p2textogab{}
+.p2textogabitem{}
+.p2textogabitemcont {}
+.p2textogabmarcador{}
+
+/*👉------- ATIVIDADE DO GABARITO  -------👈*/
+.p2atvgab{
+    margin: 1em 0 0em 1.5em;
+    max-width: 100%;
+}
+.p2atvgabcont{
+    margin: 0em 0 0em 1.5em;
+    max-width: 100%;
+}
+.p2atvgabromano{}
+.p2atvgabromanocont{}
+.p2atvgabitem{}
+.p2atvgabitemcont{}
+.p2atvgabsubitem{}
+.p2atvgabitemletra{}
+.p2atvgabitemletracont{}
+.p2atvgabletra{
+    margin: 1em 0 0em 1.5em;
+    max-width: 100%;
+}
+.p2atvgabletracont{
+    margin: 0em 0 0em 1.5em;
+    max-width: 100%;
+}
+.p2atvgabletraitembullet{}
+.p2atvgabletraitembulletcont{}
+.p2atvgabletraromano{}
+.p2atvgabletraromanocont{}
+.p2atvgabnumitem{}
+.p2atvgabnumletra{ 
+    margin: 1em 0 0em 1.5em;
+    max-width: 100%;
+}
+.p2atvgabnumletraitem{}
+.p2atvgabletraitem{}
+.p2atvgabnumromano{}
+.p2atvgabsomatoria{}
+.p2atvgabsomatoriacont{}
+
+/*👉------- TEXTO INTERMEDIÁRIO  -------👈*/
+.p3intermediariogabtit{}
+.p3intermediariogab{}
+.p3intermediariogabitem{}
+.p3intermediariogabitemcont{}
+.p3intermediariogabsemrecuo{}
+.p3intermediariogabsemrecuoitem{}
+.p3intermediariogabsemrecuoitemcont{}
+
+/*👉------- LEGENDA -------👈*/ 
+
+/*👉------- CRÉDITO GERAL -------👈*/
+
+/*👉------- CRÉDITO IMAGEM  -------👈*/
+
+/*👉------- COTAS  -------👈*/
+
+/*👉------- RECADO IMAGEM E MEDIDA ANIMAL -------👈*/
+
+/*👉------- MARCADORES -------👈*/
+
+
+/*👉------- ESTILOS DE CARACTER -------👈*/
+
