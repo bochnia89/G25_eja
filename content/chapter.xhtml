@@ -43,6 +43,114 @@
             itemtype="https://schema.org/Organization" /> <!--script vai trocar automaticamente-->
     </div>
     <main>
+
+        <nav class="box_card menuCardapio">
+            <a href="javascript:void(0);" onclick="myFunction()">
+                <i class="material-icons ico">menu</i> EJA MAT</a>
+            <ul class="card" id="myLinks">
+                <li>
+                    <h2>GABARITO </h2>
+                    <a href="instrucaoprojeto.xhtml" target="_blank"><mark>instruções do projeto</mark></a>
+                </li>
+                <li>
+                    <strong>Index MP</strong>
+                    <a href="../index_prof.xhtml" target="_blank">Modelo</a>
+                </li>
+                <li>
+                    <strong>Index LE</strong>
+                    <a href="../index_aluno.xhtml" target="_blank">Modelo</a>
+                </li>
+                <li>
+                    <strong>MPG | Manual Geral </strong> -
+                    <a href="#manualGeralcard">Snippet</a> |
+                    <a href="manualgeral_prof.xhtml" target="_blank">Modelo</a>
+                </li>
+                <li>
+                    <strong>MPG | Resolução </strong> -
+                    <a href="#resolucaoMgcard">Snippet</a> |
+                    <a href="resolucao_prof.xhtml" target="_blank">Modelo</a>
+                </li>
+                <li>
+                    <strong>MPG | Páginas para reprodução </strong> -
+                    <a href="#">Snippet</a> |
+                    <a href="reproducao_prof.xhtml" target="_blank">Modelo</a>
+                </li>
+                <li>
+                    <strong>MPG | Referências bibliográficas</strong>
+                    - <a href="#referenciasLT">Snippet</a> |
+                    <a href="referenciascomencompl_prof.xhtml" target="_blank">Modelo</a>
+                </li>
+                <li>
+                    <strong>MPU | Manual em U </strong> -
+                    <a href="#manualusnipCard">Snippet</a> |
+                    <a href="#manualuCard">Modelo</a>
+                </li>
+                <li>
+                    <strong>LE | Páginas inicias </strong>- <a href="#">Snippet</a> |
+                    <a href="paginasiniciais_aluno.xhtml" target="_blank">Modelo</a>
+                </li>
+                <li>
+                    <strong>LE | Livro Texto</strong> -
+                    <a href="#livrotextoCard">Snippet</a> |
+                    <a href="../content/unidade01.xhtml" target="_blank">Amostra</a>
+                </li>
+                <li>
+                    <strong>LE | Papelaria </strong> -
+                    <a href="#papelariaCard">Snippet</a>
+                </li>
+                <li>
+                    <strong>LE | Respostas </strong> -
+                    <a href="#respostas">Snippet</a> |
+                    <a href="respostas.xhtml" target="_blank">Modelo</a>
+                </li>
+                <li>
+                    <strong>LE | Referências</strong> -
+                    <a href="#referenciasLT">Snippet</a> |
+                    <a href="referencias.xhtml" target="_blank">Modelo</a>
+                </li>
+                <li>
+                    <strong>LE | Glossário</strong>
+                    <a href="#">Snippet</a> |
+                    <a href="glossario.xhtml" target="_blank">Modelo</a>
+                </li>
+                <li>
+                    <strong>Créditos de imagens </strong>
+                    <a href="creditosdeimagens.xhtml" target="_blank">Modelo</a>
+                </li>
+                <li>
+                    <strong>URLs encurtadas </strong>
+                    <a href="urlsencurtadas.xhtml" target="_blank">Modelo</a>
+                </li>
+                <li>
+                    <strong>Licenças </strong>
+                    <a href="license.xhtml" target="_blank">Modelo</a>
+                </li>
+                <li>
+                    <strong>OED </strong>
+                    <a href="carrossel1.xhtml" target="_blank">Modelo Carrossel</a>
+                </li>
+                <li>
+                    <strong>OED </strong>
+                    <a href="infografico.xhtml" target="_blank">Modelo Infográfico</a>
+                </li>
+                <li>
+                    <strong>OED </strong>
+                    <a href="video.xhtml" target="_blank">Modelo Vídeo</a>
+                </li>
+                <li>
+                    <strong>OED </strong>
+                    <a href="audio.xhtml" target="_blank">Modelo Audio</a>
+                </li>
+                <li>
+                    <strong>OED </strong>
+                    <a href="zoom1.xhtml" target="_blank">Modelo Zoom</a>
+                </li>
+                
+                <li onclick="oculta()">Ocultar instrução</li>
+            </ul>
+        </nav>
+
+
         <!-- Título de instrução -->
         <p class="instrucao">
             LE - EXEMPLO DE <mark>ABERTURA DE CAPÍTULO</mark> | <strong>snippet:</strong> <code></code>
@@ -67,11 +175,14 @@
                             orientações específicas</h1>
                     </div>
                     <figure class="imgAbertura">
-                        <img src="../resources/images/un1/imagem1.png" alt="texto alternativo" width="" height="" />
+                        <img src="../resources/images/un1/imagem1.png" alt="texto alternativo" width="740"
+                            height="844" />
+                        <figcaption class="p4legenda">Legenda da foto de abertura Legenda da foto de abertura. Lorem
+                            ipsum dolor sit amet consectetur adipisicing elit. </figcaption>
                     </figure>
 
-                    <div class="o0boxaberturaAtv">
-                        <p class="o0boxaberturaAtvTit">Titulo atividade</p>
+                    <div class="o0aberturaatvbox">
+                        <p class="o0aberturaatvboxTit">Titulo atividade</p>
                         <p class="p2textomarcadorsemrecuo"><span class="p5marcador">1.</span> Pela fotografia, o que
                             você observa
                             na superfície de Marte?</p>
@@ -83,7 +194,7 @@
                             na superfície de Marte?</p>
                     </div>
 
-                    <div class="o0boxaberturaObj">
+                    <div class="o0aberturaobjbox">
                         <p class="p5aberturaobjtit">Neste capítulo você vai:</p>
                         <ul class="p5aberturaobjitem">
                             <li>Ler, interpretar.</li>
@@ -123,11 +234,16 @@
                 </p>
                 <h2 class="p0tit2">Sistema Internacional de Unidades Sistema Internacional de Unidades
                 </h2>
+                <h2 class="p0tit2p">Sistema Internacional de Unidades Sistema Internacional de Unidades
+                </h2>
 
                 <h3 class="p0tit3">Sistema Internacional de Unidades
                 </h3>
 
                 <h4 class="p0tit4">Sistema Internacional de Unidades
+                </h4>
+
+                <h4 class="p0tit4p">Sistema Internacional de Unidades
                 </h4>
 
                 <h5 class="p0tit5">Sistema Internacional de Unidades
@@ -139,82 +255,88 @@
 
                 <!-- Título de instrução -->
                 <p class="instrucao">
-                    LE - EXEMPLO DE ATIVIDADES<mark></mark> | <strong>snippet:</strong> <code></code>
+                    LE - EXEMPLO DE ATIVIDADES<mark></mark> Apenas no matemática | <strong>snippet:</strong>
+                    <code></code>
                 </p>
 
                 <p class="sectitAtv"><span class="atv">Atividades </span><span class="anote">Anote as respostas no
                         caderno.</span></p>
 
-                <!-- Título de instrução -->
-                <p class="instrucao">
-                    LE - EXEMPLO DE <mark>BOX LARANJA</mark> | <strong>snippet:</strong> <code></code>
-                </p>
 
-                <div class="o3boxfiolaranja1">
-                    <p class="p1box2tit"> Teste pv modelo de box
-                    </p>
-                    <div class="box"></div>
-                </div>
-
-                <div class="o3boxfiolaranja2">
-                    <p class="p1box2tit"> Teste pv modelo de box
-                    </p>
-                    <div class="box"></div>
-                </div>
-
-                <div class="o3boxfiovermelho1">
-                    <p class="p1box1tit"> Teste pv modelo de box
-                    </p>
-                    <div class="box"></div>
-                </div>
-
-                <div class="o3boxfiovermelho2">
-                    <p class="p1box2tit"> Teste pv modelo de box
-                    </p>
-                    <div class="box"></div>
-                </div>
-                <div class="o3boxfioroxo1">
-                    <p class="p1box1tit"> Teste pv modelo de box
-                    </p>
-                    <div class="box"></div>
-                </div>
-
-                <div class="o3boxfioroxo2">
-                    <p class="p1box2tit"> Teste pv modelo de box
-                    </p>
-                    <div class="box"></div>
-                </div>
-
-                <div class="o3boxfioverde1">
-                    <p class="p1box1tit"> Teste pv modelo de box
-                    </p>
-                    <div class="box"></div>
-                </div>
-                <div class="o3boxfioverde2">
-                    <p class="p1box2tit"> Teste pv modelo de box
-                    </p>
-                    <div class="box"></div>
-                </div>
+             
 
 
                 <!-- Título de instrução -->
                 <p class="instrucao">
                     LE - EXEMPLO DE <mark>DICA</mark> | <strong>snippet:</strong> <code></code>
                 </p>
-                <div class="o0boxdica">
-                    <p class="p1box1tit">Teste pv modelo 1</p>
-                    <div class="box">
-                        <p class="p3intermediariosemrecuo">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ut dolore adipisci, delectus
-                            unde exercitationem? Nisi non accusantium minima cupiditate saepe quasi commodi earum
-                            deleniti, repudiandae dolores hic neque cum?
-                        </p>
+
+
+
+                <div class="o4dicabox">
+                    <p class="p3intermediariompsemrecuo">Lorem <mark>div.o4dicabox</mark> ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        Aspernatur quam laboriosam nesciunt similique, voluptatem harum, beatae ducimus numquam veniam
+                        velit inventore architecto quis! Facilis, quae modi quia nostrum in architecto!</p>
+                </div>
+
+                <div class="o4dicaboxnegativo">
+                    <p class="p3intermediariompsemrecuo">Lorem <mark>div.o4dicaboxnegativo</mark> ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        Aspernatur quam laboriosam nesciunt similique, voluptatem harum, beatae ducimus numquam veniam
+                        velit inventore architecto quis! Facilis, quae modi quia nostrum in architecto!</p>
+                </div>
+
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLO DE <mark>BOX CONCEITO</mark> | <strong>snippet:</strong> <code></code>
+                </p>
+                <div class="o4conceitobox">
+
+                    <p class="p3intermediariompsemrecuo">Lorem <mark>div.o4conceitobox</mark> ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        Aspernatur quam laboriosam nesciunt similique, voluptatem harum, beatae ducimus numquam veniam
+                        velit inventore architecto quis! Facilis, quae modi quia nostrum in architecto!</p>
+                </div>
+
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLO DE <mark>FICHAS</mark> | <strong>snippet:</strong> <code></code>
+                </p>
+
+                <p class="o4ficha">2 060</p>
+                <p class="o4ficha2">2 060</p>
+
+
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLO DE <mark>FUNDO DESTAQUE</mark> | <strong>snippet:</strong> <code></code>
+                </p>
+
+                <div class="o1boxfundoazul1">
+                    <p class="p2textosemrecuo">Ab= 36 + 4</p>
+                </div>
+
+                <div class="o1boxfundoroxo1">
+                    <p class="p2textosemrecuo">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+
+                <div class="col2c alinha">
+                    <div class="o1boxfundoroxo1">
+                        <p class="p2textosemrecuo"><span class="p5marcador">A.</span> Lorem, ipsum dolor sit amet
+                            consectetur adipisicing elit.</p>
+                    </div>
+
+                    <div class="o1boxfundoroxo1">
+                        <p class="p2textosemrecuo"><span class="p5marcador">A.</span>Lorem, ipsum dolor sit amet
+                            consectetur adipisicing elit.</p>
                     </div>
                 </div>
 
                 <!-- Título de instrução -->
                 <p class="instrucao">
-                    LE - EXEMPLO DE <mark>BOX FUNDO COR</mark> | <strong>snippet:</strong> <code></code>
+                    LE - EXEMPLO DE <mark>BOX FUNDO COR</mark> retirar| <strong>snippet:</strong> <code></code>
                 </p>
                 <div class="o1boxfundolaranja2">
                     <p class="p3intermediariosemrecuo">
@@ -224,6 +346,122 @@
                     </p>
                 </div>
 
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLO DE <mark class="markLaranja">ELEMENTOS COM VISUAL COM NOMES TEMPORÁRIOS</mark> |
+                    <strong>snippet:</strong> <code></code>
+                </p>
+
+
+                <div class="o0autoavaliacaobox">
+                    <p class="p1box1tit">Autoavaliação</p>
+                    <div class="box">
+                        <p class="p2textosemrecuo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae ullam
+                            beatae, eius deserunt dolorum repellat commodi harum qui voluptatem! Tenetur necessitatibus
+                            eligendi temporibus labore quae porro nobis atque voluptas cumque!</p>
+                    </div>
+                </div>
+
+
+                <div class="O0box01">
+                    <p class="p1box2tit">Pai da Trigonometria</p>
+                    <div class="box">
+                        <p class="p2textosemrecuo">Possivelmente, a primeira tabela trigonométrica foi compilada na
+                            segunda metade do século II a.C., pelo astrônomo Hiparco de Niceia (por volta de 190-125
+                            a.C.), que por esse feito é chamado “o pai da Trigonometria”.</p>
+                    </div>
+                </div>
+
+
+                <!-- FIXME: NÃO HAVERÁ NO PROJETO -->
+                <p class="p5marcadorcaixa2">Exemplo 1</p>
+
+                <p class="p5marcadorcaixa2">Exemplo 2</p>
+
+                <div class="o0box_caderno">
+                    <p class="p2textosemrecuo">O número da ficha tem 6 ordens e é
+                        formado por algarismos distintos. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Dolores sequi atque magnam fugiat blanditiis ipsa dolorum quod molestias eos cupiditate
+                        voluptatem explicabo, unde, delectus enim rem, eligendi maxime vero. Quae?</p>
+                </div>
+
+
+                <div class="o1boxfioroxo1">
+                    <p class="p2textosemrecuo">Destaque quadro miolo roxo</p>
+                    <div class="box"></div>
+                </div>
+
+                <div class="o1boxfioazul1">
+                    <p class="p2textosemrecuo">Destaque quadro miolo azul</p>
+                    <div class="box"></div>
+                </div>
+
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLO DE <mark>GRÁFICO</mark> | <strong>snippet:</strong> <code></code>
+                </p>
+
+                <div class="o2graficobox">
+                    <p class="p1graficotit">Quantia gasta por Lucas e pelos quatro amigos em uma lanchonete – 04/02/2023
+                    </p>
+                    <figure>
+                        <img src="../resources/images/un1/exemplo_grafico.png" alt="texto alternativo" width="458"
+                            height="439" />
+                    </figure>
+                </div>
+
+
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLO DE <mark>BOX PALAVRAS</mark> | <strong>snippet:</strong> <code></code>
+                </p>
+
+                <ul class="o0boxpalavra">
+                    <li>descobertas</li>
+                    <li>arqueológicas</li>
+                    <li>laneta</li>
+                    <li>continente</li>
+                    <li>desenvolveram</li>
+                    <li>civilizações</li>
+                    <li>organizadas</li>
+                </ul>
+
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLO DE <mark>TABELA</mark> | <strong>snippet:</strong> <code></code>
+                </p>
+
+                <table class="tb_verde">
+                    <!--Será utilizado classes para diferenciar QUADRO de TABELA + classe refente a sua paleta de cor-->
+                    <caption>Título Resultados obtidos </caption>
+                    <!-- Cabeçalho da tabela-->
+                    <thead>
+                        <tr>
+                            <th>Simbolo</th>
+                            <th>Número</th>
+                            <th>Significado</th>
+                        </tr>
+                    </thead>
+                    <!--Cabeçalho da tabela-->
+                    <!-- Corpo da tabela-->
+                    <tbody>
+                        <!--Linha da tabela-->
+                        <tr>
+                            <!-- Celular da Tabela -->
+                            <td>1</td>
+                            <td>1</td>
+                            <td>Traço vertical</td>
+                        </tr>
+                        <!--Linha da tabela-->
+                        <tr>
+                            <td>10</td>
+                            <td>10</td>
+                            <td>Asa
+                            </td>
+                        </tr>
+                        <!-- Corpo da tabela-->
+                    </tbody>
+                </table>
 
             </div>
             <!--Livro texto aluno -->
@@ -248,143 +486,724 @@
                     LE - EXEMPLOS DE <mark>TEXTO SEM RECUO</mark> | <strong>snippet:</strong> <code></code>
                 </p>
 
-                <p class="p2textosemrecuo">Lorem <mark>p.p2textosemrecuo</mark> ipsum dolor sit amet consectetur adipisicing elit. Quae qui iste
+                <p class="p2textosemrecuo">Lorem <mark>p.p2textosemrecuo</mark> ipsum dolor sit amet consectetur
+                    adipisicing elit. Quae qui iste
                     officiis eveniet quod aut architecto! Nobis deserunt autem beatae sed harum, hic eum dolores,
                     placeat, dignissimos est eius repudiandae? </p>
                 <ul class="p2textosemrecuoitem">
-                    <li>Lorem ipsum <mark>ul.p2textosemrecuoitem</mark> dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum <mark>ul.p2textosemrecuoitem</mark> dolor sit amet consectetur adipisicing elit.
+                    </li>
                     <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
                 </ul>
-                <p class="p2textosemrecuoitem">Lorem <mark>p.p2textosemrecuoitem</mark>ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="p2textosemrecuoitem">Lorem <mark>p.p2textosemrecuoitem</mark>ipsum dolor sit amet consectetur
+                    adipisicing elit.</p>
 
-                <p class="p2textosemrecuoitemcont">Lorem <mark>p.p2textosemrecuoitemcont</mark> ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, non suscipit in tempora illum dicta similique delectus esse at corporis voluptates eveniet repellat recusandae quaerat aliquid. Voluptas blanditiis minus facilis.</p>
-                <p class="p2textonumsemrecuo"><span class="c0destaquenumero">2.</span> Lorem <mark>p.p2textonumsemrecuo/span.c0destaquenumero</mark> ipsum dolor sit amet consectetur adipisicing elit corporis voluptates eveniet repellat recusandae quaerat aliquid. Voluptas blanditiis minus facilis.</p>
-                <p class="p2textomarcadorsemrecuo"><span class="p5marcador">1.</span> Lorem <mark>p.p2textomarcadorsemrecuo</mark> ipsum dolor sit amet
+                <p class="p2textosemrecuoitemcont">Lorem <mark>p.p2textosemrecuoitemcont</mark> ipsum dolor sit amet
+                    consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, non
+                    suscipit in tempora illum dicta similique delectus esse at corporis voluptates eveniet repellat
+                    recusandae quaerat aliquid. Voluptas blanditiis minus facilis.</p>
+                <p class="p2textonumsemrecuo"><span class="c0destaquenumero">2.</span> Lorem
+                    <mark>p.p2textonumsemrecuo/ span.c0destaquenumero</mark> ipsum dolor sit amet consectetur
+                    adipisicing
+                    elit corporis voluptates eveniet repellat recusandae quaerat aliquid. Voluptas blanditiis minus
+                    facilis.
+                </p>
+                <p class="p2textomarcadorsemrecuo"><span class="p5marcador">1.</span> Lorem
+                    <mark>p.p2textomarcadorsemrecuo</mark> ipsum dolor sit amet
                     consectetur adipisicing elit ipsum dolor sit amet
-                    consectetur adipisicing elit.</p>
-                <p class="p2textomarcadorsemrecuocont">Lorem <mark>p.p2textomarcadorsemrecuocont</mark> ipsum dolor sit amet consectetur adipisicing elit ipsum dolor sit amet consectetur adipisicing elit ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    consectetur adipisicing elit.
+                </p>
+                <p class="p2textomarcadorsemrecuocont">Lorem <mark>p.p2textomarcadorsemrecuocont</mark> ipsum dolor sit
+                    amet consectetur adipisicing elit ipsum dolor sit amet consectetur adipisicing elit ipsum dolor sit
+                    amet consectetur adipisicing elit.</p>
 
                 <!-- Título de instrução -->
                 <p class="instrucao">
                     LE - EXEMPLOS DE <mark>TEXTO</mark> | <strong>snippet:</strong> <code></code>
                 </p>
                 <!-- Texto -->
-                <p class="p2texto">Lorem ipsum <mark>p.texto</mark> dolor sit ametconsectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, sed fuga voluptatum nobis quisquam vero harum dignissimos ex ad explicabo minima modi distinctio nihil eligendi quia quis magni consectetur dolore!</p>
+                <p class="p2texto">Lorem ipsum <mark>p.texto</mark> dolor sit ametconsectetur adipisicing elit. Lorem
+                    ipsum, dolor sit amet consectetur adipisicing elit. Quidem, sed fuga voluptatum nobis quisquam vero
+                    harum dignissimos ex ad explicabo minima modi distinctio nihil eligendi quia quis magni consectetur
+                    dolore!</p>
                 <ul class="p2textoitem">
                     <li>Lorem <mark>ul.p2textoitem</mark> ipsum dolor sit amet
                         consectetur adipisicing elit.</li>
-                    <li>Lorem  ipsum dolor sit amet
+                    <li>Lorem ipsum dolor sit amet
                         consectetur adipisicing elit.</li>
                 </ul>
-                <p class="p2textoitem">Quidem, <mark>p.p2textoitem</mark> sed fuga voluptatum nobis quisquam vero harum dignissimos ex ad explicabo minima modi distinctio nihil eligendi quia quis magni consectetur dolore!</p>
-                <p class="p2textoitemcont">Fuga <mark>p.p2textoitemcont</mark> voluptatum nobis quisquam vero harum dignissimos ex ad explicabo minima modi distinctio nihil eligendi quia quis magni consectetur dolore!</p>
+                <p class="p2textoitem">Quidem, <mark>p.p2textoitem</mark> sed fuga voluptatum nobis quisquam vero harum
+                    dignissimos ex ad explicabo minima modi distinctio nihil eligendi quia quis magni consectetur
+                    dolore!</p>
+                <p class="p2textoitemcont">Fuga <mark>p.p2textoitemcont</mark> voluptatum nobis quisquam vero harum
+                    dignissimos ex ad explicabo minima modi distinctio nihil eligendi quia quis magni consectetur
+                    dolore!</p>
                 <ul class="p2textosubitem">
                     <li>Lorem <mark>ul.p2textosubitem</mark> ipsum dolor sit amet
                         consectetur adipisicing elit.</li>
-                    <li>Lorem  ipsum dolor sit amet
+                    <li>Lorem ipsum dolor sit amet
                         consectetur adipisicing elit.</li>
                 </ul>
-                <p class="p2textosubitem">Voluptatum <mark>p.p2textosubitem</mark> nobis quisquam vero harum dignissimos ex ad explicabo minima modi distinctio nihil eligendi quia quis magni consectetur dolore!</p>
+                <p class="p2textosubitem">Voluptatum <mark>p.p2textosubitem</mark> nobis quisquam vero harum dignissimos
+                    ex ad explicabo minima modi distinctio nihil eligendi quia quis magni consectetur dolore!</p>
                 <p class="p2textosubitemcont">
-                    Voluptatum <mark>p.p2textosubitemcont</mark> nobis quisquam vero harum dignissimos ex ad explicabo minima modi distinctio nihil eligendi quia quis magni consectetur dolore!
+                    Voluptatum <mark>p.p2textosubitemcont</mark> nobis quisquam vero harum dignissimos ex ad explicabo
+                    minima modi distinctio nihil eligendi quia quis magni consectetur dolore!
                 </p>
-                <p class="p2textoitemletra"><span class="c0destaqueletra">a)</span> vero <mark>p.p2textoitemletra/span.c0destaqueletra</mark> harum dignissimos ex ad explicabo minima modi distinctio nihil eligendi quia quis magni consectetur dolore!</p>
-                <p class="p2textoitemletracont">Vero <mark>p.p2textoitemletracont</mark> harum dignissimos ex ad explicabo minima modi distinctio nihil eligendi quia quis magni consectetur dolore!</p>
+                <p class="p2textoitemletra"><span class="c0destaqueletra">a)</span> vero
+                    <mark>p.p2textoitemletra/ span.c0destaqueletra</mark> harum dignissimos ex ad explicabo minima modi
+                    distinctio nihil eligendi quia quis magni consectetur dolore!
+                </p>
+                <p class="p2textoitemletracont">Vero <mark>p.p2textoitemletracont</mark> harum dignissimos ex ad
+                    explicabo minima modi distinctio nihil eligendi quia quis magni consectetur dolore!</p>
                 <!-- Texto Letra -->
-                <p class="p2textoletra"><span class="c0destaqueletra">a)</span> vero <mark>p.p2textoletra/span.c0destaqueletra</mark> harum dignissimos ex ad explicabo minima modi distinctio nihil eligendi quia quis magni consectetur dolore!</p>
-                <p class="p2textoletracont">Harum <mark>p.p2textoletracont</mark> dignissimos ex ad explicabo minima modi distinctio nihil eligendi quia quis magni consectetur dolore!</p>
+                <p class="p2textoletra"><span class="c0destaqueletra">a)</span> vero
+                    <mark>p.p2textoletra/span.c0destaqueletra</mark> harum dignissimos ex ad explicabo minima modi
+                    distinctio nihil eligendi quia quis magni consectetur dolore!
+                </p>
+                <p class="p2textoletracont">Harum <mark>p.p2textoletracont</mark> dignissimos ex ad explicabo minima
+                    modi distinctio nihil eligendi quia quis magni consectetur dolore!</p>
                 <ul class="p2textoletraitem">
                     <li>Lorem <mark>ul.p2textoletraitem</mark> ipsum dolor sit amet
                         consectetur adipisicing elit.</li>
-                    <li>Lorem  ipsum dolor sit amet
+                    <li>Lorem ipsum dolor sit amet
                         consectetur adipisicing elit.</li>
                 </ul>
-                <p class="p2textoletraitem">Dignissimos <mark>p.p2textoletraitem</mark> ex ad explicabo minima modi distinctio nihil eligendi quia quis magni consectetur dolore!</p>
-                <p class="p2textoletraitemcont">Dignissimos <mark>p.p2textoletraitemcont</mark> ex ad explicabo minima modi distinctio nihil eligendi quia quis magni distinctio nihil eligendi quia quis magni consectetur dolore!</p>
+                <p class="p2textoletraitem">Dignissimos <mark>p.p2textoletraitem</mark> ex ad explicabo minima modi
+                    distinctio nihil eligendi quia quis magni consectetur dolore!</p>
+                <p class="p2textoletraitemcont">Dignissimos <mark>p.p2textoletraitemcont</mark> ex ad explicabo minima
+                    modi distinctio nihil eligendi quia quis magni distinctio nihil eligendi quia quis magni consectetur
+                    dolore!</p>
                 <!-- Texto Marcador -->
-                <p class="p2textomarcador"><span class="p5marcador">1.</span> Lorem <mark>p.p2textomarcador</mark> ipsum dolor sit amet
+                <p class="p2textomarcador"><span class="p5marcador">1.</span> Lorem <mark>p.p2textomarcador</mark> ipsum
+                    dolor sit amet
                     consectetur adipisicing elit.</p>
-                <p class="p2textomarcadorcont">Lorem <mark>p.p2textomarcador</mark> ipsum dolor sit amet consectetur adipisicing elit dolor sit amet consectetur adipisicing elit.</p>
+                <p class="p2textomarcadorcont">Lorem <mark>p.p2textomarcador</mark> ipsum dolor sit amet consectetur
+                    adipisicing elit dolor sit amet consectetur adipisicing elit.</p>
                 <ul class="p2textomarcadoritem">
                     <li>Lorem <mark>ul.p2textomarcadoritem</mark> ipsum dolor sit amet
                         consectetur adipisicing elit.</li>
-                    <li>Lorem  ipsum dolor sit amet
+                    <li>Lorem ipsum dolor sit amet
                         consectetur adipisicing elit.</li>
                 </ul>
-                <p class="p2textomarcadoritem">Explicabo <mark>p.p2textomarcadoritem</mark> minima modi distinctio nihil eligendi quia quis magni distinctio nihil eligendi quia quis magni consectetur dolore!</p>
-                <p class="p2textomarcadoritemcont">Explicabo <mark>p.p2textomarcadoritemcont</mark> minima modi distinctio nihil eligendi quia quis magni distinctio nihil eligendi quia quis magni consectetur dolore!</p>
+                <p class="p2textomarcadoritem">Explicabo <mark>p.p2textomarcadoritem</mark> minima modi distinctio nihil
+                    eligendi quia quis magni distinctio nihil eligendi quia quis magni consectetur dolore!</p>
+                <p class="p2textomarcadoritemcont">Explicabo <mark>p.p2textomarcadoritemcont</mark> minima modi
+                    distinctio nihil eligendi quia quis magni distinctio nihil eligendi quia quis magni consectetur
+                    dolore!</p>
                 <ul class="p2textomarcadorsubitem">
                     <li>Lorem <mark>ul.p2textomarcadorsubitem</mark> ipsum dolor sit amet
                         consectetur adipisicing elit.</li>
-                    <li>Lorem  ipsum dolor sit amet
+                    <li>Lorem ipsum dolor sit amet
                         consectetur adipisicing elit.</li>
                 </ul>
-                <p class="p2textomarcadorsubitem">Lorem <mark>p.p2textomarcadorsubitem</mark>  ipsum dolor sit amet
-                    consectetur adipisicing elit.Lorem  ipsum dolor sit amet
+                <p class="p2textomarcadorsubitem">Lorem <mark>p.p2textomarcadorsubitem</mark> ipsum dolor sit amet
+                    consectetur adipisicing elit.Lorem ipsum dolor sit amet
                     consectetur adipisicing elit.</p>
                 <p class="p2textomarcadorsubitemcont"> Lipsum dolor sit amet
-                    consectetur adipisicing elit.Lorem  ipsum dolor sit amet
-                    consectetur adipisicing elitametconsectetur adipisicing elit.Lorem  ipsum dolor sit amet
+                    consectetur adipisicing elit.Lorem ipsum dolor sit amet
+                    consectetur adipisicing elitametconsectetur adipisicing elit.Lorem ipsum dolor sit amet
                     consectetur adipisicing elit.</p>
 
+
+
+                <p class="instrucao">
+                    LE - EXEMPLOS DE <mark> ATIVIDADE</mark> | <strong>snippet:</strong> <code></code>
+                </p>
                 <!-- Atividade -->
-                <p class="p2atv"><span class="c0destaquenumero">00.</span> Lorem <mark>p.p2atv/span.c0destaquenumero</mark> ipsum dolor sit amet consectetur adipisicing elit. Assumenda at quidem rerum quo nulla perferendis commodi soluta illo molestiae asperiores molestias, omnis maiores non doloremque voluptate iste ad placeat repellat.</p>
-                <p class="p2atvcont">Assumenda <mark>p.p2atvcont</mark> at quidem rerum quo nulla perferendis commodi soluta illo molestiae asperiores molestias, omnis maiores non doloremque voluptate iste ad placeat repellat.</p>
-                <p class="p2atvromano"><span class="c0destaqueromano">I)</span> Assumenda <mark>p.p2atvromano/span.c0destaqueromano</mark> at quidem rerum quo nulla perferendis commodi soluta illo molestiae asperiores molestias, omnis maiores non doloremque voluptate iste ad placeat repellat.</p>
-                <p class="p2atvromano"><span class="c0destaqueromano">VIII)</span> Assumenda at quidem rerum quo nulla perferendis commodi soluta illo molestiae asperiores molestias, omnis maiores non doloremque voluptate iste ad placeat repellat.</p>
-                <p class="p2atvromanocont">Assumenda at quidem rerum quo nulla perferendis commodi soluta illo molestiae asperiores molestias, omnis maiores non doloremque voluptate iste ad placeat repellat.</p>
+                <p class="p2atv"><span class="c0destaquenumero">00.</span> Lorem
+                    <mark>p.p2atv/span.c0destaquenumero</mark> ipsum dolor sit amet consectetur adipisicing elit.
+                    Assumenda at quidem rerum quo nulla perferendis commodi soluta illo molestiae asperiores molestias,
+                    omnis maiores non doloremque voluptate iste ad placeat repellat.
+                </p>
+                <p class="p2atvcont">Assumenda <mark>p.p2atvcont</mark> at quidem rerum quo nulla perferendis commodi
+                    soluta illo molestiae asperiores molestias, omnis maiores non doloremque voluptate iste ad placeat
+                    repellat.</p>
+                <p class="p2atvromano"><span class="c0destaqueromano">I)</span> Assumenda
+                    <mark>p.p2atvromano/span.c0destaqueromano</mark> at quidem rerum quo nulla perferendis commodi
+                    soluta illo molestiae asperiores molestias, omnis maiores non doloremque voluptate iste ad placeat
+                    repellat.
+                </p>
+                <p class="p2atvromano"><span class="c0destaqueromano">VIII)</span> Assumenda at quidem rerum quo nulla
+                    perferendis commodi soluta illo molestiae asperiores molestias, omnis maiores non doloremque
+                    voluptate iste ad placeat repellat.</p>
+                <p class="p2atvromanocont">Assumenda at quidem rerum quo nulla perferendis commodi soluta illo molestiae
+                    asperiores molestias, omnis maiores non doloremque voluptate iste ad placeat repellat.</p>
                 <ul class="p2atvitem">
-                    <li>Assumenda at quidem rerum quo nulla perferendis commodi soluta illo molestiae asperiores molestia</li>
-                    <li>Assumenda at quidem rerum quo nulla perferendis commodi soluta illo molestiae asperiores molestia</li>
+                    <li>Assumenda <mark>ul.p2atvitem</mark> at quidem rerum quo nulla perferendis commodi soluta illo
+                        molestiae asperiores molestia</li>
+                    <li>Assumenda at quidem rerum quo nulla perferendis commodi soluta illo molestiae asperiores
+                        molestia</li>
                 </ul>
-                <p class="p2atvitem">Assumenda at quidem rerum quo nulla perferendis commodi soluta illo molestiae asperiores molestia</p>
-                <p class="p2atvitemcont">Assumenda at quidem rerum quo nulla perferendis commodi soluta illo molestiae asperiores molestias, omnis maiores non doloremque voluptate iste ad placeat repellat.</p>
+                <p class="p2atvitem">Assumenda <mark>p.p2atvitem</mark> at quidem rerum quo nulla perferendis commodi
+                    soluta illo molestiae asperiores molestia</p>
+                <p class="p2atvitemcont">Assumenda <mark>p.p2atvitemcont</mark> at quidem rerum quo nulla perferendis
+                    commodi soluta illo molestiae asperiores molestias, omnis maiores non doloremque voluptate iste ad
+                    placeat repellat.</p>
                 <ul class="p2atvsubitem">
-                    <li>Assumenda at quidem rerum quo nulla perferendis commodi soluta illo molestiae asperiores molestia</li>
-                    <li>Assumenda at quidem rerum quo nulla perferendis commodi soluta illo molestiae asperiores molestia</li>
+                    <li>Assumenda <mark>ul.p2atvsubitem</mark> at quidem rerum quo nulla perferendis commodi soluta illo
+                        molestiae asperiores molestia</li>
+                    <li>Assumenda at quidem rerum quo nulla perferendis commodi soluta illo molestiae asperiores
+                        molestia</li>
                 </ul>
                 <p class="p2atvsubitem">
-                    Assumenda at quidem rerum quo nulla perferendis commodi soluta illo molestiae asperiores molestias, omnis maiores non doloremque voluptate iste ad placeat repellat.
+                    Assumenda <mark>p.p2atvsubitem</mark> at quidem rerum quo nulla perferendis commodi soluta illo
+                    molestiae asperiores molestias, omnis maiores non doloremque voluptate iste ad placeat repellat.
                 </p>
-                <p class="p2atvsubitemcont"></p>
-                <p class="p2atvitemletra"></p>
-                <p class="p2atvitemletracont"></p>
+                <p class="p2atvsubitemcont">
+                    Quidem <mark>p.p2atvsubitemcont</mark> rerum quo nulla perferendis commodi soluta illo molestiae
+                    asperiores molestias, omnis maiores non doloremque voluptate iste ad placeat repellat.
+                </p>
+                <p class="p2atvitemletra"><span class="c0destaqueletra">a)</span> Lorem
+                    <mark>p.p2atvitemletra/span.c0destaqueletra</mark> ipsum dolor sit amet consectetur adipisicing
+                    elit. Dolores tenetur dolorem consectetur, sapiente ad natus voluptatum cupiditate quibusdam
+                    obcaecati perferendis iste iure sequi animi nisi ex, ipsam esse voluptatibus sed.
+                </p>
+                <p class="p2atvitemletracont">Lorem <mark>p.p2atvitemletracont</mark> ipsum dolor sit amet consectetur
+                    adipisicing elit. Dolores tenetur dolorem consectetur, sapiente ad natus voluptatum cupiditate
+                    quibusdam obcaecati perferendis iste iure sequi animi nisi ex, ipsam esse voluptatibus sed.</p>
                 <!-- Atividade Marcador -->
-                <p class="p2atvmarcador"></p>
-                <p class="p2atvmarcadorcont"></p>
+                <p class="p2atvmarcador"><span class="p5marcador">1.</span> Lorem
+                    <mark>p.p2atvmarcador/ span.p5marcador</mark> ipsum, dolor sit amet consectetur adipisicing elit.
+                    Quae, et ab molestias totam reprehenderit, nihil ipsum sapiente aut numquam fuga tempora quas sunt
+                    laborum, magnam impedit neque itaque. Accusamus, suscipit!
+                </p>
+                <p class="p2atvmarcadorcont">
+                    Lorem <mark>p.p2atvmarcadorcont</mark> ipsum, dolor sit amet consectetur adipisicing elit. Quae, et
+                    ab molestias totam reprehenderit, nihil ipsum sapiente aut numquam fuga tempora quas sunt laborum,
+                    magnam impedit neque itaque. Accusamus, suscipit!
+                </p>
                 <!-- Atividade Letra-->
-                <p class="p2atvletra"></p>
-                <p class="p2atvletracont"></p>
-                <p class="p2atvletraromano"></p>
-                <p class="p2atvletraromanocont"></p>
-                <p class="p2atvletraitem"></p>
-                <p class="p2atvletraitemcont"></p>
-                <p class="p2atvletrasubitem"></p>
-                <p class="p2atvletrasubitemcont"></p>
-                <p class="p2atvletraitemromano"></p>
-                <p class="p2atvletraitemromanocont"></p>
+                <p class="p2atvletra"><span class="c0destaqueletra">a)</span> Lorem
+                    <mark>p.p2atvletra/ span.c0destaqueletra</mark> ipsum dolor sit amet consectetur adipisicing elit.
+                    Possimus eveniet sequi culpa blanditiis fugiat ea harum at? Exercitationem omnis voluptates deserunt
+                    error, vel repellat cum porro! Provident ex natus veniam?
+                </p>
+                <p class="p2atvletracont">Lorem <mark>p.p2atvletracont</mark> ipsum dolor sit amet consectetur
+                    adipisicing elit. Eligendi quaerat rem quod quos quisquam quam corrupti omnis earum, accusantium,
+                    pariatur itaque modi ex distinctio necessitatibus obcaecati. Fuga ducimus ratione praesentium?</p>
+                <p class="p2atvletraromano"><span class="c0destaqueromano">VIII)</span>
+                    Ipsum <mark>p.p2atvletraromano /span.c0destaqueromano</mark> dolor sit amet consectetur adipisicing
+                    elit. Eligendi quaerat rem quod quos quisquam quam corrupti omnis earum, accusantium, pariatur
+                    itaque modi ex distinctio necessitatibus obcaecati.
+                </p>
+                <p class="p2atvletraromanocont">
+                    Ipsum <mark>p.p2atvletraromanocont</mark> dolor sit amet consectetur adipisicing elit. Eligendi
+                    quaerat rem quod quos quisquam quam corrupti omnis earum, accusantium, pariatur itaque modi ex
+                    distinctio necessitatibus obcaecati.
+                </p>
+                <ul class="p2atvletraitem">
+                    <li>Lorem <mark>ul.p2atvletraitem</mark> ipsum dolor, sit amet consectetur adipisicing elit. Ullam,
+                        dolorum aliquid corporis, sunt molestiae unde voluptatem ut nemo vero accusantium in, tenetur
+                        quaerat aperiam hic adipisci obcaecati labore nam temporibus?</li>
+                    <li>Ullam, dolorum aliquid corporis, sunt molestiae unde voluptatem ut nemo vero accusantium in,
+                        tenetur quaerat aperiam hic adipisci obcaecati labore nam temporibus?</li>
+                </ul>
+                <p class="p2atvletraitem">
+                    Ullam, <mark>p.p2atvletraitem</mark> dolorum aliquid corporis, sunt molestiae unde voluptatem ut
+                    nemo vero accusantium in, tenetur quaerat aperiam hic adipisci obcaecati labore nam temporibus?
+                </p>
+                <p class="p2atvletraitemcont">
+                    Ullam, <mark>p.p2atvletraitemcont</mark> dolorum aliquid corporis, sunt molestiae unde voluptatem ut
+                    nemo vero accusantium in, tenetur quaerat aperiam hic adipisci obcaecati labore nam temporibus?
+                </p>
+                <ul class="p2atvletrasubitem">
+                    <li>Lorem <mark>ul.p2atvletrasubitem</mark> ipsum dolor, sit amet consectetur adipisicing elit.
+                        Ullam, dolorum aliquid corporis, sunt molestiae unde voluptatem ut nemo vero accusantium in,
+                        tenetur quaerat aperiam hic adipisci obcaecati labore nam temporibus?</li>
+                    <li>Ullam, dolorum aliquid corporis, sunt molestiae unde voluptatem ut nemo vero accusantium in,
+                        tenetur quaerat aperiam hic adipisci obcaecati labore nam temporibus?</li>
+                </ul>
+                <p class="p2atvletrasubitem">
+                    Ullam, <mark>p.p2atvletrasubitem</mark> dolorum aliquid corporis, sunt molestiae unde voluptatem ut
+                    nemo vero accusantium in, tenetur quaerat aperiam hic adipisci obcaecati labore nam temporibus?
+                </p>
+                <p class="p2atvletrasubitemcont">
+                    Ullam, <mark>p.p2atvletrasubitemcont</mark> dolorum aliquid corporis, sunt molestiae unde voluptatem
+                    ut nemo vero accusantium in, tenetur quaerat aperiam hic adipisci obcaecati labore nam temporibus?
+                </p>
+                <p class="p2atvletraitemromano">
+                    <span class="c0destaqueromano">VIII)</span> Lorem
+                    <mark>p.p2atvletraitemromano/ span.c0destaqueromano</mark> ipsum dolor sit amet consectetur
+                    adipisicing elit. Optio consectetur vitae placeat animi doloremque quas iure id alias expedita rerum
+                    beatae, culpa dolore rem, facere laborum. Ex eveniet non ullam?
+                </p>
+                <p class="p2atvletraitemromanocont">
+                    ipsum <mark>p.p2atvletraitemromanocont</mark> dolor sit amet consectetur adipisicing elit. Optio
+                    consectetur vitae placeat animi doloremque quas iure id alias expedita rerum beatae, culpa dolore
+                    rem, facere laborum. Ex eveniet non ullam?
+                </p>
 
+
+                <p class="instrucao">
+                    LE - EXEMPLOS DE <mark> QUESTÃO</mark> | <strong>snippet:</strong> <code></code>
+                </p>
                 <!-- Questão -->
-                <p class="p2questao"></p>
-                <p class="p2questaocont"></p>
-                <p class="p2questaoletra"></p>
-                <p class="p2questaoletracont"></p>
-                <p class="p2questaoletraitem"></p>
-                <p class="p2questaoletraitemcont"></p>
-                <p class="p2questaoitem"></p>
-                <p class="p2questaoitemcont"></p>
-                <p class="p2questaosubitem"></p>
-                <p class="p2questaosubitemcont"></p>
-                <p class="p2questaomarcador"></p>
-                <p class="p2questaomarcadorcont"></p>
+                <p class="p2questao"><span class="c0destaquequestaonum">Questão 1.</span> Lorem
+                    <mark>p.p2questao/span.c0destaquequestaonum</mark> ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                    Ad, laudantium? Odit cupiditate laborum pariatur nam explicabo cum laboriosam rerum incidunt
+                    dignissimos. Mollitia suscipit veniam minima beatae cum reiciendis, in ullam?
+                </p>
+                <p class="p2questaocont">
+                    Lorem <mark>p.p2questaocont</mark> ipsum dolor sit amet consectetur adipisicing elit. Ad,
+                    laudantium? Odit cupiditate laborum pariatur nam explicabo cum laboriosam rerum incidunt
+                    dignissimos. Mollitia suscipit veniam minima beatae cum reiciendis, in ullam?
+                </p>
+                <p class="p2questaoletra"><span class="c0destaqueletra">a)</span> Lorem
+                    <mark>p.p2questaoletra/span.c0destaqueletra</mark> ipsum dolor sit amet consectetur adipisicing
+                    elit. Ad, laudantium? Odit cupiditate laborum pariatur nam explicabo cum laboriosam rerum incidunt
+                    dignissimos. Mollitia suscipit veniam minima beatae cum reiciendis, in ullam?
+                </p>
+                <p class="p2questaoletracont">Lorem <mark>p.p2questaoletracont</mark> ipsum dolor sit amet consectetur
+                    adipisicing elit. Ad, laudantium? Odit cupiditate laborum pariatur nam explicabo cum laboriosam
+                    rerum incidunt dignissimos. Mollitia suscipit veniam minima beatae cum reiciendis, in ullam?</p>
+                <ul class="p2questaoletraitem">
+                    <li>Lorem <mark>ul.p2questaoletraitem</mark> ipsum dolor sit amet consectetur adipisicing elit.
+                        Labore ratione ad modi fuga similique provident corrupti saepe, delectus excepturi, aliquam
+                        porro, enim corporis maxime. Sint natus delectus expedita perferendis enim.</li>
+                    <li>Labore ratione ad modi fuga similique provident corrupti saepe, delectus excepturi, aliquam
+                        porro, enim corporis maxime. Sint natus delectus expedita perferendis enim.</li>
+                </ul>
+                <p class="p2questaoletraitem">
+                    Labore <mark>p.p2questaoletraitem</mark> ratione ad modi fuga similique provident corrupti saepe,
+                    delectus excepturi, aliquam porro, enim corporis maxime. Sint natus delectus expedita perferendis
+                    enim.
+                </p>
+                <p class="p2questaoletraitemcont">
+                    Labore <mark>p.p2questaoletraitemcont</mark> ratione ad modi fuga similique provident corrupti
+                    saepe, delectus excepturi, aliquam porro, enim corporis maxime. Sint natus delectus expedita
+                    perferendis enim.
+                </p>
 
+                <ul class="p2questaoitem">
+                    <li>Lorem <mark>ul.p2questaoitem</mark> ipsum dolor sit amet consectetur adipisicing elit. Labore
+                        ratione ad modi fuga similique provident corrupti saepe, delectus excepturi, aliquam porro, enim
+                        corporis maxime. Sint natus delectus expedita perferendis enim.</li>
+                    <li>Labore ratione ad modi fuga similique provident corrupti saepe, delectus excepturi, aliquam
+                        porro, enim corporis maxime. Sint natus delectus expedita perferendis enim.</li>
+                </ul>
+                <p class="p2questaoitem">
+                    Labore <mark>p.p2questaoitem</mark> ratione ad modi fuga similique provident corrupti saepe,
+                    delectus excepturi, aliquam porro, enim corporis maxime. Sint natus delectus expedita perferendis
+                    enim.
+                </p>
+                <p class="p2questaoitemcont">
+                    Labore <mark>p.p2questaoitemcont</mark> ratione ad modi fuga similique provident corrupti saepe,
+                    delectus excepturi, aliquam porro, enim corporis maxime. Sint natus delectus expedita perferendis
+                    enim.
+                </p>
+                <ul class="p2questaosubitem">
+                    <li>Lorem <mark>ul.p2questaosubitem</mark> ipsum dolor sit amet consectetur adipisicing elit. Labore
+                        ratione ad modi fuga similique provident corrupti saepe, delectus excepturi, aliquam porro, enim
+                        corporis maxime. Sint natus delectus expedita perferendis enim.</li>
+                    <li>Labore ratione ad modi fuga similique provident corrupti saepe, delectus excepturi, aliquam
+                        porro, enim corporis maxime. Sint natus delectus expedita perferendis enim.</li>
+                </ul>
+                <p class="p2questaosubitem">
+                    Labore <mark>p.p2questaosubitem</mark> ratione ad modi fuga similique provident corrupti saepe,
+                    delectus excepturi, aliquam porro, enim corporis maxime. Sint natus delectus expedita perferendis
+                    enim.
+                </p>
+                <p class="p2questaosubitemcont">
+                    Labore <mark>p.p2questaosubitemcont</mark> ratione ad modi fuga similique provident corrupti saepe,
+                    delectus excepturi, aliquam porro, enim corporis maxime. Sint natus delectus expedita perferendis
+                    enim.
+                </p>
+                <p class="p2questaomarcador">
+                    <span class="p5marcador">1.</span> Labore <mark>p.p2questaomarcador/span.p5marcador</mark> ratione
+                    ad modi fuga similique provident corrupti saepe, delectus excepturi, aliquam porro, enim corporis
+                    maxime. Sint natus delectus expedita perferendis enim.
+                </p>
+                <p class="p2questaomarcadorcont">Labore <mark>p.p2questaomarcadorcont</mark> ratione ad modi fuga
+                    similique provident corrupti saepe, delectus excepturi, aliquam porro, enim corporis maxime. Sint
+                    natus delectus expedita perferendis enim.</p>
+
+
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLOS DE <mark> INTERMEDIÁRIO</mark> | <strong>snippet:</strong> <code></code>
+                </p>
                 <!-- Intermediario  -->
-                <p class="p3intermediariotit"></p>
-                <p class="p3intermediariosemrecuo"></p>
-                <p class="p3intermediariosemrecuoitem"></p>
-                <p class="p3intermediariosemrecuoitemcont"></p>
-                <p class="p3intermediariosemrecuoletra"></p>
-                <p class="p3intermediariosemrecuoletracont"></p>
+                <p class="p3intermediariotit">Lorem <mark>p.p3intermediariotit</mark> ipsum dolor sit amet, consectetur
+                    adipisicing elit.</p>
+                <p class="p3intermediariosemrecuo"> Ratione <mark>p.p3intermediariosemrecuo</mark> sint doloremque ea!
+                    Animi eius dolorem cumque consequuntur aliquam reprehenderit, enim similique iure a quod modi
+                    voluptatem quae, ut quidem magnam doloremque ea! Animi eius dolorem cumque consequuntur aliquam
+                    reprehenderit, enim similique iure a quod modi voluptatem quae, ut quidem magnam.</p>
+                <ul class="p3intermediariosemrecuoitem">
+                    <li>Lorem <mark>ul.p3intermediariosemrecuoitem</mark> ipsum dolor sit amet consectetur adipisicing
+                        elit. Animi ratione earum culpa nesciunt exercitationem delectus a ipsam. Voluptatibus nesciunt
+                        necessitatibus doloremque quo velit sunt mollitia, aut sed repellendus aliquid quod?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ratione earum culpa nesciunt
+                        exercitationem delectus a ipsam. Voluptatibus nesciunt necessitatibus doloremque quo velit sunt
+                        mollitia, aut sed repellendus aliquid quod?</li>
+                </ul>
+                <p class="p3intermediariosemrecuoitem">Lorem <mark>p.p3intermediariosemrecuoitem</mark> ipsum dolor sit
+                    amet consectetur adipisicing elit. Animi ratione earum culpa nesciunt exercitationem delectus a
+                    ipsam. Voluptatibus nesciunt necessitatibus doloremque quo velit sunt mollitia, aut sed repellendus
+                    aliquid quod?</p>
+                <p class="p3intermediariosemrecuoitemcont">
+                    Lorem <mark>p.p3intermediariosemrecuoitemcont</mark> ipsum dolor sit amet consectetur adipisicing
+                    elit. Animi ratione earum culpa nesciunt exercitationem delectus a ipsam. Voluptatibus nesciunt
+                    necessitatibus doloremque quo velit sunt mollitia, aut sed repellendus aliquid quod?
+                </p>
+                <p class="p3intermediariosemrecuoletra"><span class="c0destaqueletra">a)</span> Lorem
+                    <mark>p.p3intermediariosemrecuoletra/ span.c0destaqueletra</mark> ipsum, dolor sit amet consectetur
+                    adipisicing elit. Delectus recusandae quae natus dolores, laboriosam ad officiis eos magnam ducimus.
+                    Quas quam animi earum optio maiores nulla dolorem perspiciatis quidem maxime.
+                </p>
+                <p class="p3intermediariosemrecuoletracont">
+                    Lorem <mark>p.p3intermediariosemrecuoletracont</mark> ipsum, dolor sit amet consectetur adipisicing
+                    elit. Delectus recusandae quae natus dolores, laboriosam ad officiis eos magnam ducimus. Quas quam
+                    animi earum optio maiores nulla dolorem perspiciatis quidem maxime.
+                </p>
+
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLO DE <mark> CITAÇÕES</mark> | <strong>snippet:</strong> <code></code>
+                </p>
+
+                <div class="o3jornalfundo">
+                    <blockquote class="p3citacaomanchete">Lorem <mark>blockquote .p3citacaomanchete</mark> ipsum dolor
+                        sit
+                        amet consectetur adipisicing elit. </blockquote>
+                    <blockquote class="p3citacaoolho">Lorem <mark>blockquote.p3citacaoolho</mark> ipsum dolor sit amet
+                        consectetur adipisicing elit. Itaque quam sapiente rerum. Expedita deserunt id, sed itaque non
+                        aliquam magnam
+                        vitae molestias dolor, ex necessitatibus esse reiciendis ad laboriosam nostrum</blockquote>
+
+                </div>
+
+                <blockquote class="p3citacaomanchete">Lorem <mark>blockquote .p3citacaomanchete</mark> ipsum dolor sit
+                    amet consectetur adipisicing elit. </blockquote>
+                <blockquote class="p3citacaotit1">Lorem <mark>blockquote .p3citacaotit1</mark> ipsum dolor sit amet
+                    consectetur adipisicing elit. </blockquote>
+                <blockquote class="p3citacaotit2">Lorem <mark>blockquote .p3citacaotit2</mark> ipsum dolor sit amet
+                    consectetur adipisicing elit. </blockquote>
+
+                <blockquote class="p3citacaoolho">Lorem <mark>blockquote.p3citacaoolho</mark> ipsum dolor sit amet
+                    consectetur adipisicing elit. </blockquote>
+
+                <blockquote class="p3citacao">Lorem <mark>blockquote.p3citacao</mark> ipsum dolor sit, amet consectetur
+                    adipisicing elit. Itaque quam sapiente rerum. Expedita deserunt id, sed itaque non aliquam magnam
+                    vitae molestias dolor, ex necessitatibus esse reiciendis ad laboriosam nostrum. </blockquote>
+
+
+                <blockquote class="p3citacaosemrecuo">Lorem <mark>blockquote.p3citacaosemrecuo</mark> ipsum dolor sit,
+                    amet consectetur adipisicing elit. Itaque quam sapiente rerum. Expedita deserunt id, sed itaque non
+                    aliquam magnam vitae molestias dolor, ex necessitatibus esse reiciendis ad laboriosam nostrum.
+                </blockquote>
+
+                <ul class="p3citacaoitem">
+                    <li>Lorem <mark>ul.p3citacaoitem</mark> ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                        quos! Molestias, ab odit eligendi perferendis, quia natus voluptatibus soluta ipsa praesentium
+                        excepturi libero modi minus veniam recusandae beatae ipsum a.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quos! Molestias, ab odit eligendi
+                        perferendis, quia natus voluptatibus soluta ipsa praesentium excepturi libero modi minus veniam
+                        recusandae beatae ipsum a.</li>
+                </ul>
+
+                <blockquote class="p3citacaoitem">
+                    Lorem <mark>blockquote.p3citacaoitem</mark> ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                    quos! Molestias, ab odit eligendi perferendis, quia natus voluptatibus soluta ipsa praesentium
+                    excepturi libero modi minus veniam recusandae beatae ipsum a.
+                </blockquote>
+                <blockquote class="p3citacaoitemcont">
+                    Lorem <mark>blockquote.p3citacaoitemcont</mark> ipsum dolor sit amet consectetur adipisicing elit.
+                    Aut, quos! Molestias, ab odit eligendi perferendis, quia natus voluptatibus soluta ipsa praesentium
+                    excepturi libero modi minus veniam recusandae beatae ipsum a.
+                </blockquote>
+
+                <blockquote class="p3citacaoletra"><span class="c0destaqueletra">a)</span>
+                    Lorem <mark>blockquote.p3citacaoletra/ span.c0destaqueletra</mark> ipsum dolor sit amet consectetur
+                    adipisicing elit. Aut, quos! Molestias, ab odit eligendi perferendis, quia natus voluptatibus soluta
+                    ipsa praesentium excepturi libero modi minus veniam recusandae beatae ipsum a.
+                </blockquote>
+                <blockquote class="p3citacaoletracont">Lorem <mark>blockquote.p3citacaoletracont</mark> ipsum dolor sit
+                    amet consectetur adipisicing elit. Aut, quos! Molestias, ab odit eligendi perferendis, quia natus
+                    voluptatibus soluta ipsa praesentium excepturi libero modi minus veniam recusandae beatae ipsum a.
+                </blockquote>
+
+
+                <div class="o3fiocitacao">
+                    <blockquote class="p3citacao">[...]</blockquote>
+                    <blockquote class="p3citacao">A comemoração deste Dia Internacional foi proclamada em 1992 pela
+                        resolução 47/3 da Assembleia Geral das Nações Unidas. O objetivo desta data comemorativa é
+                        promover os direitos e o bem-estar das pessoas com deficiência em todas as esferas da sociedade
+                        e do desenvolvimento, e aumentar a consciência sobre a situação das pessoas com deficiência em
+                        todos os aspectos da vida política, social, econômica e cultural.
+                    </blockquote>
+                    <blockquote class="p3citacao">[...]</blockquote>
+                </div>
+
+
+                <div class="o3fiocitacao">
+                    <p class="p5marcadorcaixa">Trecho A</p>
+                    <blockquote class="p3citacao">[...]</blockquote>
+                    <blockquote class="p3citacao">A comemoração deste Dia Internacional foi proclamada em 1992 pela
+                        resolução 47/3 da Assembleia Geral das Nações Unidas. O objetivo desta data comemorativa é
+                        promover os direitos e o bem-estar das pessoas com deficiência em todas as esferas da sociedade
+                        e do desenvolvimento, e aumentar a consciência sobre a situação das pessoas com deficiência em
+                        todos os aspectos da vida política, social, econômica e cultural.
+                    </blockquote>
+                    <blockquote class="p3citacao">[...]</blockquote>
+                </div>
+
+
+
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLO DE <mark>RESPOSTA / BOLD / ITALICO /BOLDITALICO / IDIOMA</mark> |
+                    <strong>snippet:</strong> <code></code>
+                </p>
+                <p class="p4resposta">Resposta: ipsum dolor sit amet, consectetur adipisicing <strong
+                        class="c2respostabold">elit</strong>. Consectetur perferendis alias consequuntur porro culpa
+                    voluptate ad <em class="c2respostaitalico">soluta</em> illum a sunt in voluptates blanditiis
+                    excepturi repudiandae commodi, <em class="c2respostabolditalico"><strong>numquam</strong></em>
+                    reprehenderit <span class="c3idiomaresposta">expedita</span> molestiae.</p>
+
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLOS DE <mark>BOLD / ITALICO / BOLDITALICO</mark> | <strong>snippet:</strong> <code></code>
+                </p>
+                <p class="p2textosemrecuo ">Color sit amet, consectetur adipisicing <strong
+                        class="c1bold">elit</strong>. Consectetur perferendis alias consequuntur porro culpa voluptate
+                    ad <em class="c1italico">soluta</em> illum a sunt in voluptates blanditiis excepturi repudiandae
+                    commodi, <em class="c1bolditalico"><strong>numquam</strong></em> reprehenderit expedita molestiae.
+                </p>
+
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLOS DE <mark> IDIOMA / BOLD / ITALICO / BOLDITALICO</mark> | <strong>snippet:</strong>
+                    <code></code>
+                </p>
+                <p class="p2textosemrecuo ">Color sit amet, <span class="c3idioma">consectetur</span> adipisicing
+                    <strong class="c3idiomabold">elit</strong>. Consectetur perferendis alias consequuntur porro culpa
+                    voluptate ad <em class="c3idiomaitalico">soluta</em> illum a sunt in voluptates blanditiis excepturi
+                    repudiandae commodi, <em class="c3idiomabolditalico"><strong>numquam</strong></em> reprehenderit
+                    expedita molestiae.
+                </p>
+
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLOS DE <mark> IDIOMA RESPOSTA / BOLD / ITALICO / BOLDITALICO</mark> |
+                    <strong>snippet:</strong> <code></code>
+                </p>
+                <p class="p4resposta ">
+                    Color sit amet, <span class="c3idiomaresposta">consectetur</span> adipisicing <strong
+                        class="c3idiomaboldresposta">elit</strong>. Consectetur perferendis alias consequuntur porro
+                    culpa voluptate ad <em class="c3idiomaitalicoresposta">soluta</em> illum a sunt in voluptates
+                    blanditiis excepturi repudiandae commodi, <em
+                        class="c3idiomabolditalicoresposta"><strong>numquam</strong></em> reprehenderit expedita
+                    molestiae.</p>
+
+
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLO DE <mark>ORDINAL</mark> | <strong>snippet:</strong> <code></code>
+                </p>
+                <p class="p2textosemrecuo ">10<span class="c4ordinal">º</span> 53<span class="c4ordinal">ª</span></p>
+
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLO DE <mark>SIMULADOR HIPERLINK</mark> | <strong>snippet:</strong> <code></code>
+                </p>
+
+                <p class="p2textosemrecuo">Este <mark>p.p2textosemrecuo/span.c4simuladorhiperlink</mark> é o simulador
+                    de <span class="c4simuladorhiperlink">hiperlink</span>, mas não é clicavel.</p>
+
+                <blockquote class="p3citacao">Este <mark>blockquote.p3citacao/ span.c4simuladorhiperlink</mark> é o
+                    simulador de <span class="c4simuladorhiperlink">hiperlink</span>, mas não é clicavel.</blockquote>
+
+
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLO DE <mark>VOCABULÁRIO</mark> | <strong>snippet:</strong> <code></code>
+                </p>
+                <p class="p2texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, <dfn>
+                        <span class="c4vocabulariodestaque">palavras</span>
+                        <a href="glossario.xhtml#glossario_id_sOv175522305268_glos"
+                            title="Link para o glossário da palavra" aria-label=" para acessar o glossário da palavra">
+                            <sup role="doc-glossref">✚</sup>
+                        </a>
+                    </dfn> laboriosam. Corrupti, excepturi laudantium quas porro consequuntur tempore commodi aliquid
+                    ullam? Sint ipsam unde pariatur <dfn>
+                        <span class="c4vocabulariodestaque">palavras</span>
+                        <a href="glossario.xhtml#glossario_id_sOv175522305267_glos"
+                            title="Link para o glossário da palavra" aria-label=" para acessar o glossário da palavra">
+                            <sup role="doc-glossref">✚</sup>
+                        </a>
+                    </dfn> exercitationem quae possimus, ad commodi iusto!</p>
+
+
+                <dl class="c4vocabulariodestaqueitalico" aria-label="Glossário">
+                    <dt id="glossario_id_sOv175522305267_glos">
+                        <dfn>Banana amarela e verde: </dfn>
+                    </dt>
+                    <dd>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic quibusdam quidem excepturi nostrum
+                        officia aperiam, autem suscipit ipsum delectus eligendi doloremque, ut quae consectetur earum
+                        nisi sapiente, quaerat molestias dolor?
+                        <a href="#glossario_id_sOv175522305267_voc" role="doc-backlink"
+                            aria-label="para voltar ao termo" title="Link para voltar ao termo">
+                            <sup>↰</sup>
+                        </a>
+                    </dd>
+                </dl>
+
+
+
+                <dl class="c4vocabulariodestaqueitalico" aria-label="Glossário">
+                    <dt id="glossario_id_sOv175522305268_glos">
+                        <dfn>Banana amarela e verde: </dfn>
+                    </dt>
+                    <dd>
+                        Lorem, quaerat molestias dolor?
+                        <a href="#glossario_id_sOv175522305268_voc" role="doc-backlink"
+                            aria-label="para voltar ao termo" title="Link para voltar ao termo">
+                            <sup>↰</sup>
+                        </a>
+                    </dd>
+                </dl>
+
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLO DE <mark>CRÉDITO GERAL</mark> | <strong>snippet:</strong> <code></code>
+                </p>
+                <p class="p4credgeral">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur perferendis
+                    alias consequuntur porro culpa Consectetur perferendis alias consequuntur porro culpa.</p>
+
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLO DE <mark>CRÉDITO IMAGEM</mark> | <strong>snippet:</strong> <code></code>
+                </p>
+                <p class="p4credgeral">Lorem ipsum. </p>
+
+
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLO DE <mark>IMAGEM + LEGENDA</mark> | <strong>snippet:</strong> <code></code>
+                </p>
+
+                <figure>
+                    <img src="../resources/images/un1/imagem1.png" alt="texto alternativo" width="360" height="410" />
+                    <figcaption class="p4legenda">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <p class="p5marcador">A.</p>
+                    <img src="../resources/images/un1/imagem1.png" alt="texto alternativo" width="360" height="410" />
+                    <figcaption class="p4legenda">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </figcaption>
+                </figure>
+
+                <div class="col2c ">
+
+                    <figure>
+                        <p class="p5marcador">A.</p>
+                        <img src="../resources/images/un1/imagem1.png" alt="texto alternativo" width="200"
+                            height="228" />
+                        <figcaption class="p4legenda">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <p class="p5marcador">B.</p>
+                        <img src="../resources/images/un1/imagem1.png" alt="texto alternativo" width="200"
+                            height="228" />
+                        <figcaption class="p4legenda">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <p class="p5marcador">C.</p>
+                        <img src="../resources/images/un1/imagem1.png" alt="texto alternativo" width="200"
+                            height="228" />
+                        <figcaption class="p4legenda">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        </figcaption>
+                    </figure>
+
+                </div>
+                <div class="col2c ">
+
+                    <figure>
+                        <p class="p5marcador">A.</p>
+                        <img src="../resources/images/un1/imagem1.png" alt="texto alternativo" width="354"
+                            height="404" />
+                        <figcaption class="p4legenda">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <p class="p5marcador">B.</p>
+                        <img src="../resources/images/un1/imagem1.png" alt="texto alternativo" width="354"
+                            height="404" />
+                        <figcaption class="p4legenda">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        </figcaption>
+                    </figure>
+
+                </div>
+                <div class="col2c ">
+
+                    <figure>
+                        <p class="p5marcador">A.</p>
+                        <img src="../resources/images/un1/imagem1.png" alt="texto alternativo" width="350"
+                            height="400" />
+                        <figcaption class="p4legenda">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        </figcaption>
+                    </figure>
+
+
+
+                </div>
+
+                <figure>
+                    <p class="p5marcadorcaixa2">Exemplo 1</p>
+                    <img src="../resources/images/un1/imagem1.png" alt="texto alternativo" width="360" height="410" />
+                    <figcaption class="p4legenda">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </figcaption>
+                </figure>
+
+            </div>
+            <!--Livro texto aluno -->
+
+            <!--Manual do professor-->
+            <aside class="box_professor_mp" aria-label="Orientações específicas da página">
+                <h2 class="orienta"><span>ORIENTAÇÕES AO PROFESSOR</span></h2>
+                <p class="orientaTx">Não há orientações específicas para esta página.</p>
+            </aside>
+            <!--Manual do professor-->
+        </section>
+
+        <!-- ******************** PÁGINA 000 ***************************-->
+        <section class="pag000" aria-label="Página">
+            <header>
+                <p class="pag" role="doc-pagebreak" aria-label="Página">Página 00</p>
+            </header>
+            <!--Livro texto aluno -->
+            <div class="box_aluno" role="region" aria-label="Conteúdo da página">
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLO DE <mark>SEÇÃO 1</mark> | <strong>snippet:</strong> <code></code>
+                </p>
+
+
+                <div class="o0sec1">
+                    <div class="box">
+                        <h2 class="p1sec1tit1">Investigue seus conhecimentos</h2>
+
+                        <p>Conse idelest otatiandi am simaion sequas dit quodisi nvelibu saessuntis eniminv eriaecuptate
+                            volore maximpe liatiur? Qui aut quidem etur aut laceatumquis doluptium velis doluptat. Conse
+                            idelest otatiandi am simaion sequas dit quodisi nvelibu saessuntis eniminv eriaecuptate
+                            volore maximpe liatiur? Qui aut quidem etur aut laceatumquis doluptium velis doluptat. </p>
+
+                        <p>Conse idelest otatiandi am simaion sequas dit quodisi nvelibu saessuntis eniminv eriaecuptate
+                            volore maximpe liatiur? Qui aut quidem etur aut laceatumquis doluptium velis doluptat. Conse
+                            idelest otatiandi am simaion sequas dit quodisi nvelibu saessuntis eniminv eriaecuptate
+                            volore maximpe liatiur? Qui aut quidem etur aut laceatumquis doluptium velis doluptat. </p>
+                    </div>
+                </div>
 
             </div>
             <!--Livro texto aluno -->
@@ -406,11 +1225,89 @@
             <!--Livro texto aluno -->
             <div class="box_aluno" role="region" aria-label="Conteúdo da página">
 
-                <div class="o0sec1">
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLO DE <mark>SEÇÃO 2</mark> | <strong>snippet:</strong> <code></code>
+                </p>
+
+                <div class="o0sec2">
+                    <div class="secTits2">
+                        <h2 class="p1sec2tit1">Conexões</h2>
+                    </div>
+                    <div class="box">
+
+                        <p class="p1sec2tit2">A cultura popular na música brasileira</p>
+
+                        <p class="p1sec2tit3">Título seção sub</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sapiente id ipsum eius et
+                            soluta, molestias omnis labore, sunt officiis odio, doloribus perspiciatis voluptate velit
+                            voluptas rem. Eaque, modi minus.</p>
+                    </div>
+                </div>
+
+            </div>
+            <!--Livro texto aluno -->
+
+            <!--Manual do professor-->
+            <aside class="box_professor_mp" aria-label="Orientações específicas da página">
+                <h2 class="orienta"><span>ORIENTAÇÕES AO PROFESSOR</span></h2>
+                <p class="orientaTx">Não há orientações específicas para esta página.</p>
+            </aside>
+            <!--Manual do professor-->
+        </section>
+
+
+        <!-- ******************** PÁGINA 000 ***************************-->
+        <section class="pag000" aria-label="Página">
+            <header>
+                <p class="pag" role="doc-pagebreak" aria-label="Página">Página 00</p>
+            </header>
+            <!--Livro texto aluno -->
+            <div class="box_aluno" role="region" aria-label="Conteúdo da página">
+
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLO DE <mark>SEÇÃO 3</mark> | <strong>snippet:</strong> <code></code>
+                </p>
+
+                <div class="o0sec3">
+                    <h2 class="p1sec3tit1">Verifique seus conhecimentos</h2>
+                    <div class="box">
+
+                    </div>
+                </div>
+
+            </div>
+            <!--Livro texto aluno -->
+
+            <!--Manual do professor-->
+            <aside class="box_professor_mp" aria-label="Orientações específicas da página">
+                <h2 class="orienta"><span>ORIENTAÇÕES AO PROFESSOR</span></h2>
+                <p class="orientaTx">Não há orientações específicas para esta página.</p>
+            </aside>
+            <!--Manual do professor-->
+        </section>
+
+
+        <!-- ******************** PÁGINA 000 ***************************-->
+        <section class="pag000" aria-label="Página">
+            <header>
+                <p class="pag" role="doc-pagebreak" aria-label="Página">Página 00</p>
+            </header>
+            <!--Livro texto aluno -->
+            <div class="box_aluno" role="region" aria-label="Conteúdo da página">
+
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLO DE <mark>SEÇÃO 4</mark> | <strong>snippet:</strong> <code></code>
+                </p>
+
+                <div class="o0sec4">
                     <div class="secTits">
-                        <div class="p1sec1tit1">
-                            <p>Teste pv maior</p>
+                        <div class="p1sec4tit1">
+                            <p>Mídia em foco</p>
                         </div>
+                        <!-- p1sec4tit2 -->
                         <h2 class="p1sec1tit2">Título seção sub idelest otatiandi am simaion sequas dit quodisi nvelibu
                             saessuntis</h2>
                     </div>
@@ -441,17 +1338,15 @@
             <!--Livro texto aluno -->
             <div class="box_aluno" role="region" aria-label="Conteúdo da página">
 
-                <div class="o0boxsec2">
-                    <div class="secTits2">
-                        <h2 class="p1sec2tit1">Teste pv maior</h2>
-                    </div>
-                    <div class="box">
-                        <p class="p1sec2tit2">Título seção sub</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sapiente id ipsum eius et
-                            soluta, molestias omnis labore, sunt officiis odio, doloribus perspiciatis voluptate velit
-                            voluptas rem. Eaque, modi minus.</p>
-                    </div>
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLO DE <mark>SEÇÃO 5</mark> | <strong>snippet:</strong> <code></code>
+                </p>
+                <div class="o0sec5">
+                    <h2 class="p1sec5tit1">Síntese do capítulo</h2>
+                    <div class="box"></div>
                 </div>
+
 
             </div>
             <!--Livro texto aluno -->
@@ -464,33 +1359,6 @@
             <!--Manual do professor-->
         </section>
 
-        <!-- ******************** PÁGINA 000 ***************************-->
-        <section class="pag000" aria-label="Página">
-            <header>
-                <p class="pag" role="doc-pagebreak" aria-label="Página">Página 00</p>
-            </header>
-            <!--Livro texto aluno -->
-            <div class="box_aluno" role="region" aria-label="Conteúdo da página">
-
-                <div class="o0sec3">
-                    <div class="box">
-                        <h2 class="p1sec3tit1">Título atividade</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate architecto placeat esse
-                            suscipit animi velit nihil, corrupti quo voluptatibus recusandae quod ipsa hic asperiores
-                            explicabo illum nostrum veniam natus unde?</p>
-                    </div>
-                </div>
-
-            </div>
-            <!--Livro texto aluno -->
-
-            <!--Manual do professor-->
-            <aside class="box_professor_mp" aria-label="Orientações específicas da página">
-                <h2 class="orienta"><span>ORIENTAÇÕES AO PROFESSOR</span></h2>
-                <p class="orientaTx">Não há orientações específicas para esta página.</p>
-            </aside>
-            <!--Manual do professor-->
-        </section>
 
 
         <!-- ******************** PÁGINA 000 ***************************-->
@@ -501,11 +1369,42 @@
             <!--Livro texto aluno -->
             <div class="box_aluno" role="region" aria-label="Conteúdo da página">
 
-                <div class="o0sec4">
+
+
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLO DE <mark>BOX PARA SABER MAIS</mark> | <strong>snippet:</strong> <code></code>
+                </p>
+
+                <div class="o0parasabermaisbox">
+                    <p class="p1box1tit">Para saber mais</p>
                     <div class="box">
-                        <h2 class="p1sec4tit1">Título atividade</h2>
+                        <p class="p2textosemrecuo">No livro Descobrindo a cada passo, são apresentadas algumas ideias
+                            matemáticas presentes no nosso cotidiano, como o cálculo de medidas de distância, conversão
+                            de unidades de medida e noções de escala. Aproveite para descobrir a Matemática de modo
+                            muito agradável e prazeroso.</p>
                     </div>
                 </div>
+
+
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLO DE <mark>SEÇÃO SUGESTÕES COMPLAMENTARES</mark> | <strong>snippet:</strong>
+                    <code></code>
+                </p>
+
+                <div class="o0sugestcomp">
+                    <h2 class="p1sugestcomptit1">Sugestões complementares</h2>
+                    <div class="box">
+                        <p>Conse idelest otatiandi am simaion sequas dit quodisi nvelibu saessuntis eniminv eriaecuptate
+                            volore maximpe liatiur? Qui aut quidem etur aut laceatumquis doluptium velis doluptat. Conse
+                            idelest otatiandi am simaion sequas dit quodisi nvelibu saessuntis eniminv eriaecuptate
+                            volore maximpe liatiur? Qui aut quidem etur aut laceatumquis doluptium velis doluptat. </p>
+                    </div>
+                </div>
+
+
+
 
             </div>
             <!--Livro texto aluno -->
@@ -517,6 +1416,83 @@
             </aside>
             <!--Manual do professor-->
         </section>
+
+
+
+        <!-- ******************** PÁGINA 000 ***************************-->
+        <section class="pag000" aria-label="Página" id="referenciasLT">
+            <header>
+                <p class="pag" role="doc-pagebreak" aria-label="Página">Página 00</p>
+            </header>
+            <!--Livro texto aluno -->
+            <div class="box_aluno" role="region" aria-label="Conteúdo da página">
+                <div class="o0referencias">
+                    <div class="box">
+
+                        <h2 class="p1referenciabibliotit1">Referências bibliográficas comentadas</h2>
+
+                        <p class="p2referenciasbiblioitem">BOYER, Carl Benjamin. História da matemática. Tradução: Elza
+                            F. Gomide. São Paulo: Edgard
+                            Blücher, 1974.</p>
+                        <p class="p2referenciasbibliocoment"> O autor apresenta, nesse livro, momentos históricos e
+                            pensadores que contribuíram para a
+                            construção da Matemática como a conhecemos atualmente. Além disso, denota a utilização de
+                            diferentes sistemas de numeração ao longo da História e problemas cotidianos que
+                            influenciaram o desenvolvimento da Matemática.</p>
+                        <p class="p2referenciasbiblioitem">
+                            BRASIL. Ministério da Educação. Base Nacional Comum Curricular (BNCC). Versão final.
+                            Brasília: MEC, 2018. Disponível em:
+                            http://basenacionalcomum.mec.gov.br/images/BNCC_EI_EF_110518_versaofinal_site.pdf. Acesso
+                            em:
+                            2 fev. 2022.
+                        </p>
+                        <p class="p2referenciasbibliocoment">Esse é um documento norteador dos currículos nacionais, que
+                            indica competências e habilidades
+                            comuns a serem desenvolvidas pelos estudantes em cada uma das etapas da Educação Básica.</p>
+                        <p class="p2referenciasbiblioitem">CARDOSO, Virgínia Cardia. Materiais didáticos para as quatro
+                            operações. 3. ed. São Paulo:
+                            CAEM/IME-USP, 1996. v. 2.</p>
+                        <p class="p2referenciasbibliocoment">A autora trabalha diferentes maneiras para o professor
+                            conduzir o processo de ensino e de
+                            aprendizagem das quatro operações básicas da Matemática, por meio da utilização de recursos
+                            didáticos diferenciados e materiais manipuláveis.</p>
+                        <p class="p2referenciasbiblioitem">DIAS, Marisa da Silva; MORETTI, Vanessa Dias. Números e
+                            operações: elementos
+                            lógico--históricos para atividade de ensino. Curitiba: Ibpex, 2011. (Matemática em sala de
+                            aula).</p>
+                        <p class="p2referenciasbibliocoment"> As autoras apresentam, nessa obra, uma retomada histórica
+                            a respeito do desenvolvimento de
+                            operações matemáticas e dos sistemas de numeração, abordando como o conhecimento matemático
+                            foi sendo desenvolvido desde as primeiras civilizações.</p>
+
+                        <h3 class="p1referenciabibliotit2">Siglas</h3>
+                        <p class="p2referenciasbiblioitem">DOLCE, Osvaldo; POMPEO, José Nicolau. Fundamentos de
+                            matemática elementar, 9: geometria
+                            plana: exercícios resolvidos, exercícios propostos com resposta, testes de vestibular com
+                            resposta. 7. ed. São Paulo: Atual, 2013.</p>
+                        <p class="p2referenciasbibliocoment">Essa obra aborda conceitos teóricos de Geometria Plana e
+                            contém exercícios de aplicação e
+                            aprofundamento teórico, selecionados de acordo com níveis diferenciados de dificuldade,
+                            indicando também sugestões para a condução das aulas de Matemática que abordam esses
+                            conceitos.</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <!--Livro texto aluno -->
+
+            <!--Manual do professor-->
+            <aside class="box_professor_mp" aria-label="Orientações específicas da página">
+                <h2 class="orienta"><span>ORIENTAÇÕES AO PROFESSOR</span></h2>
+                <p class="orientaTx">Não há orientações específicas para esta página.</p>
+            </aside>
+            <!--Manual do professor-->
+        </section>
+
+
+
+
 
 
         <!-- ******************** PÁGINA 000 ***************************-->
@@ -527,17 +1503,217 @@
             <!--Livro texto aluno -->
             <div class="box_aluno" role="region" aria-label="Conteúdo da página">
 
-                <p class="objetodigital_oed">Objeto digital: <strong>Vídeo</strong></p>
+                <p class="p4iconeoed">Objeto digital: <strong>Vídeo</strong></p>
+
+
+                <!-- Título de instrução -->
+                <p class="instrucao" id="papelariaCard">
+                    LE - EXEMPLO DE <mark>PAPELETAS</mark> | <strong>snippet:</strong> <code></code>
+                </p>
+
+                <div class="o5papeleta1">
+                    <div class="camada1"></div>
+                    <div class="camada2"></div>
+                </div>
+                <div class="o5papeleta2">
+                    <div class="camada1"></div>
+                    <div class="camada2"></div>
+                </div>
+
+
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLO DE <mark>BILHETE</mark> | <strong>snippet:</strong> <code></code>
+                </p>
+                <div class="o5bilhete1"></div>
+                <div class="o5bilhete2"></div>
+
+
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLO DE <mark>POST-IT</mark> | <strong>snippet:</strong> <code></code>
+                </p>
+
+
+                <div class="o5postit1"></div>
+                <div class="o5postit2"></div>
+
+
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLO DE <mark>NOTAS</mark> | <strong>snippet:</strong> <code></code>
+                </p>
+
+                <div class="o5nota1">
+                    <div class="camada1"></div>
+                    <div class="camada2"></div>
+                </div>
+                <div class="o5nota2">
+                    <div class="camada1"></div>
+                    <div class="camada2"></div>
+                </div>
+
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLO DE <mark>NAVEGADOR</mark> | <strong>snippet:</strong> <code></code>
+                </p>
+
+                <div class="o5navegador">
+                    <div class="barranavegador">
+                        <p class="url">https://</p>
+                    </div>
+                    <div class="box"></div>
+                </div>
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLO DE <mark>QUADRO BRANCO</mark> | <strong>snippet:</strong> <code></code>
+                </p>
+
+                <div class="o5quadrobranco"></div>
+
+
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLO DE <mark>LOUSA</mark> | <strong>snippet:</strong> <code></code>
+                </p>
+
+                <div class="o5lousa"></div>
+
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLO DE <mark>MOUDURA</mark> | <strong>snippet:</strong> <code></code>
+                </p>
+
+                <div class="o5moudura">
+                    <p class="p2texto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro perspiciatis
+                        quisquam quaerat quo voluptatibus cupiditate optio, accusantium labore accusamus quos, nostrum
+                        modi, consectetur dicta? Enim vel illum incidunt. Facilis, sed.</p>
+                </div>
+
+
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                    LE - EXEMPLO DE <mark>PRANCHETA</mark> | <strong>snippet:</strong> <code></code>
+                </p>
+
+                <div class="o5prancheta">
+                    <p class="p2texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti quia ducimus
+                        minima ipsum deserunt beatae omnis reprehenderit neque inventore. Pariatur, doloribus fugiat
+                        quas nesciunt mollitia culpa dolorum vel nostrum labore.</p>
+                </div>
+
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                LE - EXEMPLO DE <mark>VERBETE DICIONÁRIO</mark> | <strong>snippet:</strong> <code></code>
+                </p>
+
+                <div class="o5verbetedicionario">
+                    <p><strong>ac • ces • so • ry</strong> / ik’ se seari/ noun, pl -ies [count]</p>
+                    <p><strong>1</strong> : something added to someting else ro make it more useful, attractive or effective<span class="destaqueAzul"> •fashion/clothing <em>accessories</em> such as scarves, handkerchiefs, bracelets and rings • automotive <em>accessories</em> • computer <em>acessories</em></span></p>
+                </div>
+
+
             </div>
             <!--Livro texto aluno -->
 
             <!--Manual do professor-->
             <aside class="box_professor_mp" aria-label="Orientações específicas da página">
                 <h2 class="orienta"><span>ORIENTAÇÕES AO PROFESSOR</span></h2>
-                <p class="orientaTx">Não há orientações específicas para esta página.</p>
+
+
+                <!-- Título de instrução -->
+                <p class="instrucao" id="manualuCard">
+                MPU - EXEMPLO DE <mark></mark> | <strong>snippet:</strong> <code></code>
+                </p>
+                <p class="p1box1tit">Objetivos</p>
+                
+
+                <p class="p2textompsemrecuo">Lorem <mark>p.p2textompsemrecuo</mark> ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus nihil cumque sequi commodi molestiae, ipsam odio libero delectus quibusdam, fugiat quisquam asperiores sed aut tempora repellat explicabo officiis repellendus.</p>
+
+                
+
+                <p class="p2textomp">Lorem <mark>p.p2textomp</mark> ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus nihil cumque sequi commodi molestiae, ipsam odio libero delectus quibusdam, fugiat quisquam asperiores sed aut tempora repellat explicabo officiis repellendus.</p>
+                <p class="p1box2tit">Verificação de aprendizagem</p>
+
+                <p class="p2textompsemrecuo"><span class="c0destaquenumeromp">1.</span> Lorem <mark>p.p2textompsemrecuo / span.c0destaquenumeromp</mark> ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus nihil cumque sequi commodi molestiae, ipsam odio libero delectus quibusdam, fugiat quisquam asperiores sed aut tempora repellat explicabo officiis repellendus.</p>              
+
+                <p class="p2textompsemrecuo"><span class="c0destaqueletramp">a)</span> Lorem <mark>p.p2textompsemrecuo / span.c0destaqueletramp</mark> ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus nihil cumque sequi commodi molestiae, ipsam odio libero delectus quibusdam, fugiat quisquam asperiores sed aut tempora repellat explicabo officiis repellendus.</p>
+
+
+
+
+                <p class="p2textompnum"><span class="c0destaquenumeromp">1.</span> Lorem <mark>p.p2textompnum / span.c0destaquenumeromp</mark> ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus nihil cumque sequi commodi molestiae, ipsam odio libero delectus quibusdam, fugiat quisquam asperiores sed aut tempora repellat explicabo officiis repellendus.</p>
+
+                <p class="p2textompnumletra"><span class="c0destaquenumeromp">1. a)</span> Lorem <mark>p.p2textompnumletra / span.c0destaquenumeromp</mark> ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus nihil cumque sequi commodi molestiae, ipsam odio libero delectus quibusdam, fugiat quisquam asperiores sed aut tempora repellat explicabo officiis repellendus.</p>
+
+                <p class="p2textompnumitem"><span class="c0destaquenumeromp">1. •</span> Lorem <mark>p.p2textompnumitem / span.c0destaquenumeromp</mark> ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus nihil cumque sequi commodi molestiae, ipsam odio libero delectus quibusdam, fugiat quisquam asperiores sed aut tempora repellat explicabo officiis repellendus.</p>
+
+                <p class="p2textompnumletraitem"><span class="c0destaquenumeromp">1. a) •</span> Lorem <mark>p.p2textompnumletraitem / span.c0destaquenumeromp</mark> ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus nihil cumque sequi commodi molestiae, ipsam odio libero delectus quibusdam, fugiat quisquam asperiores sed aut tempora repellat explicabo officiis repellendus.</p>
+       
+
+
+
+                <p class="p2textomp">Lorem <mark>p.p2textomp</mark> ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus nihil cumque sequi commodi molestiae, ipsam odio libero delectus quibusdam, fugiat quisquam asperiores sed aut tempora repellat explicabo officiis repellendus.</p>
+                <p class="p1box2tit">Verificação de aprendizagem</p>
+                
+
+                <ul class="p2textompitem">
+                    <li>Lorem <mark>ul.p2textompitem</mark> ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus nihil cumque sequi commodi molestiae, ipsam odio libero delectus quibusdam, fugiat quisquam asperiores sed aut tempora repellat explicabo officiis repellendus.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus nihil cumque sequi commodi molestiae, ipsam odio libero delectus quibusdam, fugiat quisquam asperiores sed aut tempora repellat explicabo officiis repellendus.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus nihil cumque sequi commodi molestiae, ipsam odio libero delectus quibusdam, fugiat quisquam asperiores sed aut tempora repellat explicabo officiis repellendus.</li>
+                </ul>
+
+                <p class="p2textompitem">Lorem <mark>p.p2textompitem</mark> ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus nihil cumque sequi commodi molestiae, ipsam odio libero delectus quibusdam, fugiat quisquam asperiores sed aut tempora repellat explicabo officiis repellendus.</p>
+
+                <ul class="p2textompsubitem">
+                    <li>Lorem  <mark>ul.p2textompsubitem</mark> ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus nihil cumque sequi commodi molestiae, ipsam odio libero delectus quibusdam, fugiat quisquam asperiores sed aut tempora repellat explicabo officiis repellendus.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus nihil cumque sequi commodi molestiae, ipsam odio libero delectus quibusdam, fugiat quisquam asperiores sed aut tempora repellat explicabo officiis repellendus.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus nihil cumque sequi commodi molestiae, ipsam odio libero delectus quibusdam, fugiat quisquam asperiores sed aut tempora repellat explicabo officiis repellendus.</li>
+                </ul>
+
+                <p class="p2textompsubitem">Lorem <mark>p.p2textompsubitem</mark> ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus nihil cumque sequi commodi molestiae, ipsam odio libero delectus quibusdam, fugiat quisquam asperiores sed aut tempora repellat explicabo officiis repellendus.</p>
+
+
+                <p class="p3intermediariompsemrecuo">Lorem <mark>p.p3intermediariompsemrecuo</mark>ipsum dolor sit amet consectetur adipisicing elit. Soluta ducimus nihil cumque sequi commodi molestiae, ipsam odio libero delectus quibusdam, fugiat quisquam asperiores sed aut tempora repellat explicabo officiis repellendus.</p>
+
+                <!-- Título de instrução -->
+                <p class="instrucao">
+                MPU - EXEMPLO DE <mark>CITAÇÃO MPU</mark> | <strong>snippet:</strong> <code></code>
+                </p>
+                <blockquote class="p3citacaomptit2">Lorem <mark>blockquote.p3citacaomptit2</mark> ipsum dolor sit amet consectetur, adipisicing elit. Fuga sapiente eligendi nam voluptate.</blockquote>
+                <blockquote class="p3citacaomp">Lorem <mark>blockquote.p3citacaomp</mark> ipsum dolor sit amet consectetur, adipisicing elit. Fuga sapiente eligendi nam voluptate. Ea, libero iste perferendis molestias sit eligendi ipsa, tenetur animi alias culpa accusamus cumque quisquam praesentium laudantium.</blockquote>
+                <blockquote class="p3citacaompsemrecuo">Lorem <mark>blockquote.p3citacaompsemrecuo</mark> ipsum dolor sit amet consectetur, adipisicing elit. Fuga sapiente eligendi nam voluptate. Ea, libero iste perferendis molestias sit eligendi ipsa, tenetur animi alias culpa accusamus cumque quisquam praesentium laudantium.</blockquote>
+                <ul class="p3citacaompitem">
+                    <li>Lorem <mark>ul.p3citacaompitem</mark> ipsum dolor sit amet consectetur, adipisicing elit. Fuga sapiente eligendi nam voluptate. Ea, libero iste perferendis molestias sit eligendi ipsa, tenetur animi alias culpa accusamus cumque quisquam praesentium laudantium.</li>
+                    <li>Lorem <mark></mark> ipsum dolor sit amet consectetur, adipisicing elit. Fuga sapiente eligendi nam voluptate. Ea, libero iste perferendis molestias sit eligendi ipsa, tenetur animi alias culpa accusamus cumque quisquam praesentium laudantium.</li>
+                    <li>Lorem <mark></mark> ipsum dolor sit amet consectetur, adipisicing elit. Fuga sapiente eligendi nam voluptate. Ea, libero iste perferendis molestias sit eligendi ipsa, tenetur animi alias culpa accusamus cumque quisquam praesentium laudantium.</li>
+                </ul>
+
+                <p class="p3citacaompitem">Lorem <mark>p.p3citacaompitem</mark> ipsum dolor sit amet consectetur, adipisicing elit. Fuga sapiente eligendi nam voluptate. Ea, libero iste perferendis molestias sit eligendi ipsa, tenetur animi alias culpa accusamus cumque quisquam praesentium laudantium.</p>
+
+
+                <p class="p4iconeoedmp">Objeto digital: <strong>Vídeo</strong></p>
+
             </aside>
             <!--Manual do professor-->
         </section>
+
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+
+            var btn = document.querySelector("#back-to-top");
+            btn.addEventListener("click", function () {
+                window.scrollTo(0, 0);
+            })
+        </script>
 
     </main>
 </body>
