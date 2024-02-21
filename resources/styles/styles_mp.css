@@ -78,22 +78,80 @@
 .p1sec2mptit2{}
 
 /*👉=========== TEXTOS PESO: PRINCIPAL===========👈*/
-/* Texto Principal */
+/* Texto Principal sem recuo */
+.p2textompsemrecuo,
+.p2textompsemrecuoitem, 
+.p2textompsemrecuoitem,
+.p2textompsemrecuoitemcont,
+.p2textompsemrecuosubitem,
+.p2textompnumsemrecuo,
+.p2textompnumsemrecuocont,
+.p2textompsemrecuonum,
+.p2textompsemrecuoletra,
+.p2textompsemrecuonumletra,
+.p2textompsemrecuonumitem,
+.p2textompsemrecuoromano,
+.p2textompsemrecuonumromano,
+.p2textompsemrecuonumromanoitem,
+.p2textompsemrecuonumletraitem{
+    text-align: justify;
+    hyphens: none;
+    margin: 0.5em 0;
+}
+
+
 .p2textompsemrecuo{
     font-family: var(--texto);
     font-size: var(--pesoPadrao);
-    text-align: justify;
-    hyphens: none;
+   
 }
 
 .p2textompsemrecuoitem{}
+ul.p2textompsemrecuoitem, p.p2textompsemrecuoitem{
+    margin: 1em 0;
+}
+ul.p2textompsemrecuoitem li::before, p.p2textompsemrecuoitem::before{
+    content: '•';
+    font-size: 1.2em;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px 0 0 ;
+
+}
+
 .p2textompsemrecuoitemcont{}
+
+ul.p2textompsemrecuosubitem, p.p2textompsemrecuosubitem{
+    margin: 1em 0 1em 1em;
+}
+ul.p2textompsemrecuosubitem li::before, p.p2textompsemrecuosubitem::before{
+    content: '•';
+    color: var(--laranja1);
+    font-size: 1.2em;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px 0 0 ;
+
+}
+
 
 .p2textompnumsemrecuo{}
 .p2textompnumsemrecuocont{}
 
+.p2textompsemrecuonum{}
+.p2textompsemrecuoletra{}
 
-/* TEXTO */
+.p2textompsemrecuonumletra{}
+.p2textompsemrecuonumletraitem{} 
+
+.p2textompsemrecuonumitem{}
+
+.p2textompsemrecuoromano{}
+.p2textompsemrecuonumromano{}
+.p2textompsemrecuonumromanoitem{}
+
+
+/* TEXTO  Principal*/
 .p2textomp{
     font-family: var(--texto);
     font-size: var(--pesoPadrao);
@@ -216,23 +274,23 @@ p.p2textompsubitem::before, ul.p2textompsubitem li::before{
 
 /*👉=========== TEXTOS PESO: INTERMEDIÁRIO ======👈*/
 /* Textos Intermediários */
-.p3intermediariomptit
+.p3intermediariomptit{}
 
-.p3intermediariomp
+.p3intermediariomp{}
 
-.p3intermediariompitem
-.p3intermediariompitemcont
-.p3intermediariompitemletra
-.p3intermediariompitemletracont
+.p3intermediariompitem{}
+.p3intermediariompitemcont{}
+.p3intermediariompitemletra{}
+.p3intermediariompitemletracont{}
 
-.p3intermediariompletra
-.p3intermediariompletracont
+.p3intermediariompletra{}
+.p3intermediariompletracont{}
 
-.p3intermediariompnumero
-.p3intermediariompnumerocont
+.p3intermediariompnumero{}
+.p3intermediariompnumerocont{}
 
-.p3intermediariompmarcador
-.p3intermediariompmarcadorcont
+.p3intermediariompmarcador{}
+.p3intermediariompmarcadorcont{}
 
 .p3intermediariompsemrecuo {
     font-family: var(--texto);
@@ -240,8 +298,8 @@ p.p2textompsubitem::before, ul.p2textompsubitem li::before{
     text-align: left;
     
 }
-.p3intermediariompsemrecuoitem
-.p3intermediariompsemrecuoitemcont
+.p3intermediariompsemrecuoitem{}
+.p3intermediariompsemrecuoitemcont{}
 
 /* Citação */
 .p3citacaomptit1,
@@ -254,7 +312,8 @@ p.p2textompsubitem::before, ul.p2textompsubitem li::before{
 .p3citacaompletracont,
 .p3citacaompnumero,
 .p3citacaompnumerocont, 
-.p3citacaompsemrecuo{
+.p3citacaompsemrecuo,
+.p3citacaompsemrecuoletra{
     font-family: var(--citacao);
     font-size: var(--pesoPadrao);
     text-align: justify;
@@ -262,7 +321,12 @@ p.p2textompsubitem::before, ul.p2textompsubitem li::before{
     margin: 0.5em 0;
 }
 
-.p3citacaomptit1{}
+.p3citacaomptit1{
+    font-family: var(--citacao);
+    font-size: var(--peso6);
+    text-align: center;
+    font-weight: bold;
+}
 .p3citacaomptit2{
     text-align: center;
     font-weight: bold;
@@ -284,6 +348,12 @@ ul.p3citacaompitem li::before, p.p3citacaompitem::before{
     height: 10px;
     margin:  0 10px 0 0;
 }
+
+
+.p3citacaompsemrecuoletra{
+    font-size: var(--peso7);
+}
+
 .p3citacaompitemcont{}
 .p3citacaompletra{}
 .p3citacaompletracont{}
@@ -340,7 +410,7 @@ ul.p3citacaompitem li::before, p.p3citacaompitem::before{
 /*👉.c0destaqueletramp{}
 
 .c0destaquenumeromp{}
-
+.c0destaqueromanomp{}
 .c0bulletnumitem{}👈*/
 
 
