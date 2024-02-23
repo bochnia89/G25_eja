@@ -239,8 +239,8 @@ strong em {
 .objeto {}
 
 .credito {
-    display: flex;
-    flex-direction: row-reverse;
+    /*👉display: flex;👈*/
+    /*👉flex-direction: row-reverse;👈*/
 }
 
 /*👉classes adicionadas para OED vídeo e áudio👈*/
@@ -301,6 +301,13 @@ strong em {
 
 .creditoimagemOED {
     font-size: 0.9em;
+    text-align: right;
+}
+
+.fonteimagemOED{
+    font-size: 0.9em;
+    text-align: right;
+    margin: 0.5em 0 0 0;
 }
 
 .btn_voltar_oed {
