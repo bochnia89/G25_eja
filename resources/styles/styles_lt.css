@@ -757,10 +757,10 @@ header .pag {
 }
 
 .p1sec2tit2 {
-    color: var(--verde1);
+    color: var(--preto);
     font-family: var(--titulo);
     font-weight: bold;
-    font-size: var(--peso6);
+    font-size: var(--peso5);
     line-height: 1.1em;
     text-align: left;
     padding: 0.5em 0 0 0;
@@ -768,11 +768,20 @@ header .pag {
 
 .p1sec2tit3 {
     background: url(../images/pv_p1sec2tit2.svg) top left no-repeat;
+    background-size: 15px ;
     background-position-y:5px ;
     font-family: var(--titulo);
     font-weight: bold;
-    font-size: var(--peso7);
+    font-size: var(--peso6);
     padding: 0 0 0 1em;
+    margin: 1em 0 0.5em 0;
+}
+
+.p1sec2tit4{
+    font-family: var(--titulo);
+    font-weight: bold;
+    font-size: var(--pesoPadrao);
+    padding: 0 0 0 0;
     margin: 1em 0 0.5em 0;
 }
 
@@ -831,7 +840,18 @@ header .pag {
     text-align: center;
 }
 
-.p1sec4tit2 {}
+.p1sec4tit2 {
+    background: var(--verde2);
+  border-radius: 0 4em 4em 0;
+  color: var(--preto);
+  font-family: var(--titulo);
+  font-size: var(--pesoPadrao);
+  width: max-content;
+  max-width: 70%;
+  margin: 0 0 0 130px;
+  position: absolute;
+  padding: 0.2em 1em 0.4em 3em;
+}
 
 .p1sec4tit3 {}
 
@@ -1023,16 +1043,17 @@ p.p2textosemrecuoitem::before {
 
 
 .p2texto {
-    margin: 0.5em 0 0.5em 28px;
+    margin: 0.5em 0 0.5em 0;
+    text-indent: 1.5em;
 }
 
 ul.p2textoitem {
     list-style: disc;
-    margin: 0.5em 0 0.5em 44px;
+    margin: 0.5em 0 0.5em 40px;
 }
 
 p.p2textoitem {
-    margin: 0.5em 0 0.5em 44px;
+    margin: 0.5em 0 0.5em 40px;
 }
 
 p.p2textoitem::before {
@@ -1043,7 +1064,7 @@ p.p2textoitem::before {
 }
 
 .p2textoitemcont {
-    margin: 0em 0 0.5em 44px;
+    margin: 0em 0 0.5em 40px;
 }
 
 ul.p2textosubitem {
@@ -1077,11 +1098,11 @@ p.p2textosubitem::before {
 }
 
 .p2textoitemletra {
-    margin: 0.5em 0 0.5em 5em;
+    margin: 0.5em 0 0.5em 4em;
 }
 
 .p2textoitemletracont {
-    margin: 0.5em 0 0.5em 5em;
+    margin: 0.5em 0 0.5em 4em;
 }
 
 .p2textoletra {
@@ -1691,6 +1712,18 @@ figure>.p5marcador {
 
 .p5marcadorcaixa {
     background: var(--verde1);
+    border-radius: 0em 0 0 0;
+    color: var(--branco);
+    font-family: var(--titulo);
+    font-weight: bold;
+    width: max-content;
+    max-width: 100%;
+    padding:0 1em 0.2em 1em;
+    margin: 0.5em 0; 
+}
+
+.o3fiocitacao>.p5marcadorcaixa {
+    background: var(--verde1);
     border-radius: 1em 0 0 0;
     color: var(--branco);
     font-family: var(--titulo);
@@ -1901,8 +1934,10 @@ dd sup {
     text-align: right;
 }
 
+.c0destaquesomatoria{}
 .c0bulletnumitem{
-
+    
+   
 }
 .c0bulletsubitem{}
 
@@ -2372,12 +2407,36 @@ dd sup {
 .o1boxfundoroxo1 {
     background: var(--roxo3);
     border-radius: 0.5em;
-    padding: 0.2em 0.5em;
-    margin: 0.5em;
+    padding: 0.2em 1em;
+    margin: 1em 0;
     width: max-content;
     max-width: 95%;
 }
 
+.o1boxfundoroxo2 {
+    background: var(--roxo2);
+    border-radius: 0.5em;
+    padding: 0.2em 1em;
+    margin: 1em 0;
+    width: max-content;
+    max-width:100%;
+}
+
+.o1boxfundobranco{
+    background: var(--branco);
+    border-radius: 1em ;
+    padding: 1em;
+    margin: 1em 0;
+}
+
+.o1boxfundovermelho2{
+    background: var(--vermelho2);
+    border-radius: 0.5em;
+    padding: 0.2em 0.5em;
+    margin: 0.5em 0;
+    width: max-content;
+    max-width: 100%;
+}
 
 /* FIXME: NOMES TEMPORÁRIOS 
 o4boxinfo
