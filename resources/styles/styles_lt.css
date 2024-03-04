@@ -1939,7 +1939,11 @@ dd sup {
     
    
 }
-.c0bulletsubitem{}
+/* Estilo de caracter utilizado no manual em U */
+.c0bulletsubitem{
+
+    
+}
 
 /* ESTILO DE OBJETO */
 .boxaberturaTit {
