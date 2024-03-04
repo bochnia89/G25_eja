@@ -20,7 +20,7 @@ fieldset, img {
     border: 0
 }
 
-address, caption, cite, code, dfn, em, strong, th, var {
+address,  cite, code, dfn, em, strong, th, var {
     font-style: normal;
     font-weight: normal
 }
@@ -28,8 +28,7 @@ address, caption, cite, code, dfn, em, strong, th, var {
 ol, ul {
     list-style: none
 }
-
-caption, th {
+ th {
     text-align: left
 }
 
