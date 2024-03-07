@@ -3448,6 +3448,73 @@ o5verbetedicionario
     color: var(--link);
 }
 
+
+/* ------------------👉 CLASSES PARA PÁGINAS INICIAIS CONFIRMAR COM BRUNA 👈----------------------*/
+/* 
+    .p1seciniciaistit1
+    .p1seciniciaistit2
+    .o0secapresentacao
+    .o0secconheca
+    .o0seconheca2     
+*/
+
+.o0secapresentacao{
+    background: var(--laranja3);
+    border-radius: 0 0 5em 0;
+    padding: 1em 0 1em 0;
+    position: relative;
+    z-index: 3;
+}
+
+.o0secconheca{
+    background: var(--verde2);
+    padding-bottom: 4em;
+    padding-top: 5em;
+    position: relative;
+    margin: -5em 0 0 0;
+    z-index: 2;
+}
+
+.o0secapresentacao .box{
+    padding: 0 2em 1em 2em;
+ }
+
+.o0secconheca .box{
+   padding: 0 2em 1em 2em;
+}
+
+.p1seciniciaistit1{
+    background: var(--preto);
+    font-family: var(--titulo);
+    font-size: var(--peso4);
+    padding: 0.5em 0.5em;
+    color: var(--branco);
+    max-width: 100%;
+    width: max-content;
+    margin: 1.5em 0 0.5em 1.4em;
+}
+
+.p1seciniciaistit1::after{
+    content: '';
+    background: url(../images/pv_p1seciniciaistit1.svg) no-repeat;
+    width:90px;
+    height:45px;
+    position:absolute;
+    margin: -35px 0 0 -50px;
+    z-index: -1;
+}
+
+.p1seciniciaistit2{
+    background: var(--vermelho2);
+    font-family: var(--titulo);
+    font-weight: bold;
+    font-size: var(--pesoPadrao);
+    padding: 0.2em 0.5em;
+    max-width: 100%;
+    width: max-content;
+    margin: 2em 0 0.5em 0;
+}
+
 /*MEDIA QUERY*/
 /*👉Versão Mobile Cel👈*/
 @media screen and (max-width: 700px) {
