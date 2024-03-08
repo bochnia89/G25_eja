@@ -394,6 +394,128 @@ header .pag {
     padding: 0em 4.5em;
 }
 
+/*👉 ==========SUMÁRIO========👈*/
+.p1seciniciaistit1,
+.p1sumariopeso1pv,
+.p1sumariopeso1,
+.p1sumariopeso2,
+.p1sumariopeso3,
+.p1sumariopeso4,
+.p1sumarioextrapeso1{}
+
+.p1sumariopeso1pv a,
+.p1sumariopeso1 a,
+.p1sumariopeso2 a,
+.p1sumariopeso3 a,
+.p1sumariopeso4 a,
+.p1sumarioextrapeso1 a{
+    color: var(--preto);
+}
+
+.secsumario{
+    background: url(../images/pv_sumario.svg) no-repeat;
+    background-position-x: -30px ;
+    padding: 2em 2.5em;
+}
+.secsumario2{
+    padding: 2em 2.5em;
+}
+
+.secsumario>.p1seciniciaistit1{
+    background: var(--preto);
+    color: var(--branco);
+    font-family: var(--titulo); 
+    font-size: var(--peso1);
+    padding: 0em 1em;
+    font-weight: bold;
+    max-width: max-content;
+    width: 100%;
+}
+.p1sumariopeso1 a .p1sumariopeso1pv{
+    background: var(--vermelho1);
+    color: var(--branco);
+    padding: 0em 1.5em 0.2em 1em;
+    border-radius: 1em ;
+    font-weight: bold;
+    margin: 0 1em 0 0 ;
+}
+.p1sumariopeso1pv::after{
+    content: '';
+    background: url(../images/pv_capitulob.svg) no-repeat;
+    width:37px ;
+    height:15px ;
+    position: absolute;
+    margin: 0 0 0 0;
+    z-index: 3;
+}
+
+.p1sumariopeso1pv::before{
+    content: '';
+    background: url(../images/pv_capituloa.svg) no-repeat;
+    width:34px ;
+    height:32px ;
+    position: absolute;
+    margin: -14px 0 0 -30px;
+    z-index: -3;
+}
+.p1sumariopeso1 .linkcap{
+    background: var(--laranja2) ;
+    border-radius: 1em   0 0 1em;
+    padding: 0 1em 3px 0;
+}
+.p1sumariopeso1 {
+    
+    font-family: var(--titulo); 
+    font-weight: bold;
+    padding: 0 0 3px 0;
+    margin: 1em 0 0 0;
+    
+}
+.p1sumariopeso2{
+    font-family: var(--titulo);
+    font-weight: bold;
+    margin: 0 0 0 1.4em;
+}
+.p1sumariopeso3{
+    background: url(../images/pv_p0tit3.svg) top left no-repeat;
+    background-position-y: 5px ;
+    font-family: var(--titulo);
+    padding: 0 0 0 1em;
+    margin: 0 0 0 2em;
+}
+.p1sumariopeso4{
+    margin: 0 0 0 3.6em;
+}
+.p1sumarioextrapeso1 a{
+    color: var(--verde1);
+    font-family: var(--titulo);
+    font-weight: bold;
+}
+
+.secao_renomear{
+    background: url(../images/pv_secsumario.svg)  no-repeat;
+    background-position-y:9px ;
+    padding: 0 0 0 1.2em;
+    margin: 0 0 0 0.6em;
+}
+.secao_renomear a{
+    color: var(--verde1);
+    font-family: var(--titulo);
+    font-weight: bold;
+}
+
+
+.sumariosecinicial {
+    background: var(--verde3);
+    border-radius: 1em;
+    padding: 1em;
+    margin: 2em 0;
+}
+.navsumario{
+
+    margin: 1em 0;
+}
+
 
 /*👉=================== ESTILOS MIOLO ================================👈*/
 /* TÍTULOS  */
@@ -871,7 +993,7 @@ header .pag {
 
 .p1sec3tit3 {}
 
-.p1sec4tit1 {
+.box_aluno .p1sec4tit1 {
     /*👉background: var(--preto);
     color: var(--branco);
     font-family: var(--titulo);
@@ -2801,6 +2923,35 @@ o4avaliacaobox
     margin: 1em 0;
 }
 
+.o0boxcurriculo{
+    border: 1px solid var(--roxo1) ;
+    display: flex;
+    gap: 1em;
+    margin: 1em 0;
+  
+}
+.boxinfocurriculo{
+    background: url(../images/bg_curriculo1.svg) top center no-repeat,
+    url(../images/bg_curriculo2.svg) bottom center no-repeat #f6f6f6;
+    background-size: 100%;
+    padding: 1em 1em 2em 1em;
+}
+.boxexpecurriculo{
+    padding: 1em;
+   
+}
+.boxinfocurriculo>div>figure>img{
+    border: 5px solid var(--branco);
+    background: #A7ACA8;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.o0boxcurriculo .titulo{
+    border-top: 1px solid var(--preto);
+    margin: 2em 0 0 0 ;
+}
 
 .o0parasabermais {
     margin: 1em 0;
@@ -3467,36 +3618,56 @@ o5verbetedicionario
 }
 
 .o0secconheca{
-    background: var(--verde2);
+    background: url(../images/bg_secconheca1.svg) no-repeat, url(../images/bg_secconheca12.svg) right bottom  no-repeat var(--verde2);
+    background-position-y: 70px, bottom  ;
     padding-bottom: 4em;
     padding-top: 5em;
     position: relative;
     margin: -5em 0 0 0;
     z-index: 2;
 }
+.o0secconheca2{
+    background: url(../images/pv_secconheca2.svg) no-repeat var(--verde2);   
+    background-position-x: -20px ;
+    background-position-y: -10px ;
+    padding: 3em 0 0 0;
+}
+
+.o0secconheca3{
+    background: url(../images/pv_secconheca3.svg) top  no-repeat var(--verde2);   
+    background-position-x:102% ;
+    background-position-y: 40px ;
+    padding: 0 1em 0 0;
+}
 
 .o0secapresentacao .box{
     padding: 0 2em 1em 2em;
  }
+.o0secconheca2 .box, .o0secconheca3 .box {
+    padding: 1em 2em 1em 3.5em;
+}
+
 
 .o0secconheca .box{
    padding: 0 2em 1em 2em;
 }
 
-.p1seciniciaistit1{
+.o0secapresentacao>.p1seciniciaistit1,
+.o0secconheca>.p1seciniciaistit1{
     background: var(--preto);
     font-family: var(--titulo);
     font-size: var(--peso4);
     padding: 0.5em 0.5em;
-    color: var(--branco);
-    max-width: 100%;
+    color: var(--branco);   
     width: max-content;
+    max-width: 85%;
     margin: 1.5em 0 0.5em 1.4em;
 }
 
-.p1seciniciaistit1::after{
-    content: '';
+.o0secapresentacao>.p1seciniciaistit1::after, 
+.o0secconheca> .p1seciniciaistit1::after{
     background: url(../images/pv_p1seciniciaistit1.svg) no-repeat;
+    content: '';    
     width:90px;
     height:45px;
     position:absolute;
@@ -3596,6 +3767,15 @@ o5verbetedicionario
         z-index: 3;
     }
 
+
+
+    /* Conheça o livro */
+    .o0secconheca3{
+        background: url(../images/pv_secconheca3.svg) top  no-repeat var(--verde2);   
+        background-position-x:110% ;
+        background-position-y: 40px ;
+        padding: 0 0 0 0;
+    }
 
 
 
