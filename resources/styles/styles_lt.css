@@ -14,8 +14,8 @@ html {
 }
 
 body {
-    font-size: var(--pesoPadrao);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--texto);
+    font-size: var(--pesoPadrao);    
     line-height: 1.5em;
     overflow-x: hidden !important;
     hyphens: none;

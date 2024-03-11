@@ -57,11 +57,11 @@ margin:-10px 0 0 -6px ;
 
 /* para saber mais */
 .box_geral_mp>.o0parasabermais{
-    background: url(../images/pv_boxsaibamais_bg1.svg) no-repeat var(--preto);
+  background: url(../images/pv_boxsaibamais_bg1.svg) no-repeat var(--preto);
   background-position-x: 120px;
   border-radius: 1em 1em 0 0;
   color: var(--branco);
-  font-family: var(titulo);
+  font-family: var(--titulo);
   font-weight: bold;
   padding: 0.2em 2em 0.2em 0.5em;
   margin: 1em 0 0.5em 0;
@@ -96,7 +96,7 @@ margin:-10px 0 0 -6px ;
   }
 
 
-.p1sec5tit1{
+  .box_geral_mp .p1sec5tit1{
     margin: 1.5em 0 0.5em 0px;
 }
 .box_geral_mp .p1sec3tit1{
