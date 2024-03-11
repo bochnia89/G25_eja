@@ -589,17 +589,9 @@ header .pag {
     max-width: 100%;
 }
 
-.p0tit2::before {
-    content: '';
-    background: url(../images/pv_p0tit2.svg) top left no-repeat;
-    background-size: 100%;
-    width: 50px;
-    height: 80px;
-    position: absolute;
-    margin: -30px 0 0 -55px;
-}
 
-.p0tit2p {
+
+.p0tit2 {
     background: url(../images/pv_titatividades_bg.svg) no-repeat var(--verde1);
     background-size: 100px;
     background-position-x: -45px;
@@ -616,7 +608,7 @@ header .pag {
     margin: 2em 0 0.5em 0;
 }
 
-.p0tit2p::before {
+.p0tit2::before {
     background: url(../images/pv_p0tit2p.svg) no-repeat;
     content: '';
     width: 132px;
@@ -661,7 +653,7 @@ header .pag {
 }
 
 /* FIXME: Este título é o padrão no português */
-.p0tit4p {
+.p0tit4 {
     background: url(../images/pv_p0tit4p.svg) no-repeat var(--laranja3);
     background-position-x: -6px;
     font-size: var(--peso4);
